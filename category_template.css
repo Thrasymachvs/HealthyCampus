@@ -1,0 +1,123 @@
+body, html {
+  height: 100%;
+  margin: 0 auto;
+}
+
+#container_main{
+	position: relative;
+	height: 100%;
+	max-width: 90%;
+	margin: 0 auto;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	padding-top: 3em;
+}
+
+.wrapper{	
+	max-width: 90%;
+	margin: 0 auto;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+/*Navigation------------------------------------------*/
+
+#container_main > #header{
+	position: relative;
+	padding: 1em 0 0 0;
+	height: 5em;
+}
+
+#container_main > #header > #primary_menu{
+	position: relative;
+	padding-top: 1em;
+	list-style: none;
+	margin: 0;
+	float: right;
+}
+
+#container_main > #header > #primary_menu > li{
+	display: inline;
+	padding-left: 2em;
+	font-size: 1em;
+	font-family: Verdana;
+	color: rgb(128, 128, 128, 0.8);
+}
+
+.nav_title > a{
+	text-decoration: none;
+	z-index: 1;
+	color: rgb(128, 128, 128, 0.8);
+}
+
+.nav_title > a:before {
+	content: "";
+	position: absolute;
+	width: 6em;
+	height: 3px;
+	bottom: -0.15em;
+	background: rgb(70, 70, 185);
+	visibility: hidden;
+	border-radius: 5px;
+	transform: scaleX(0);
+	transition: .25s linear;
+}
+
+.nav_title > a:hover:before,
+.nav_title > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+/*----------------------------------------------------*/
+
+
+
+/*Logo------------------------------------------*/
+
+.logo{
+	display: block;
+	margin: 0;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+.logo a{
+	text-decoration: none;
+}
+
+/*#uci a{
+	font-size: 7em;
+}*/
+
+#healthy a, #healthy a:hover{
+	font-size: 2em;
+	color: rgb(128, 128, 128);
+}
+
+#campus a, #campus a:hover{
+	font-size: 1.2em;
+	letter-spacing: 0.9em;
+	color: rgb(70, 70, 185);
+}
+/*----------------------------------------------------*/
+
+
+
+/*Header Text---------------------------------------*/
+
+#container_main > #header_photo{
+	text-align: center;
+	position: relative;
+	top: 35%;
+	transform: translateY(-50%);
+}
+
+
+#container_main > #header_photo > .phrase{
+	margin: 0 auto;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 2.5em;
+	color: rgb(128, 128, 128);
+}
+/*----------------------------------------------------*/
