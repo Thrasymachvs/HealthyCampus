@@ -1,69 +1,126 @@
-/*Ensure that there's no white space on the border*/
 body {
+	/*Ensure that there's no white space on the border*/
 	margin: 0 auto;
 }
 
 #wrapper {
 	/*Note: By setting height to 100%, the background will cover the whole header of the homepage*/
 	height: 100%;
+
+	/*Background Image and not repeating*/
+	background: url("../img/dusk_hill.jpg") no-repeat;
 	
 	/*Format: Width, Height*/
 	background-size: 100%;
 }
 
-/*Navigation Bar*/
-#navbar {
-	/*Note: The last number specify its transperancy*/
-	background-color: rgb(66, 134, 244, 0.2);
-
-	height: 30%;
+/*Default font*/
+.subcategory p,
+#search p, #submit_search {
+  font-size: 1.5em;
+  font-family: "Bitter", sans-serif;
+  font-weight: bolder;
 }
 
+.subcategory p { 
+	color: #381B1B;
+}
+
+#search p { 
+	font-size: 2em;
+	letter-spacing: 5px; 
+	color: #fff;
+}
+
+/*Navigation Bar*/
 #navbar nav {
-	padding: 2em 0 2em 0;
+	padding: 3.5em 0;
 	text-align: center;
 }
+
+#navbar nav a { text-decoration: none; }
 
 .subcategory {
 	/*Note: Creates the circle*/
-	width: 8em;
-	height: 8em;
+	width: 10em;
+	height: 10em;
 	border-radius: 50%;
-	background-color: rgb(119, 244, 66);
+	background-color: #B8B8B8;
 
+	/*Stack each subcategory horizontally*/
 	display: inline-block;
-	text-align: center;
+	text-align: center;	
+	vertical-align: middle; /*Ensure that there's no 'baseline' issue*/
 
 	/*Note: Spacing in between menu items*/
-	margin: 0 1em 0 1em;
+	margin: 0 3em;
+
+	/*Animation*/
+	-webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
-.subcategory p {
-
-	/*Note: Vertically align category name*/
-	padding-top: 1.2em;
+.subcategory:hover, .subcategory:focus, .subcategory:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
-
 
 /*Search Bar*/
 #search {
-	background-color: rgb(112, 37, 140, 0.2);
-	height: 70%;
-
+	padding: 6.5em 0;
 	text-align: center;
 }
 
+#search p { margin-right:  1em;}
+
 #search > *{
+	/*Stack each subcategory horizontally*/
 	margin: 0;
 	display: inline-block;
 }
 
-dd > ul {
-	position: relative;
-	z-index: 1;
+/*Search Button*/
+#submit_search {
+  display: inline-block;
+  margin-left: 2em;
+  padding: 0.6em 1.1em;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;	
+	color: #381B1B;
+  background-color: #00BFF3;
+  border: none;
+
+  /*Animation*/
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  cursor: pointer;
 }
 
-/*#search * {
-	margin-top: 5em;
-	display: inline-block;
-}*/
+#submit_search:before {
+	content: '';
+  position: absolute;
+  border: #00BFF3 solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+
+#submit_search:hover:before, #submit_search:focus:before, #submit_search:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+}
