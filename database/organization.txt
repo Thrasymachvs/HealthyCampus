@@ -1,0 +1,49 @@
+[
+    {
+        "organization": "Anteater Recreation Center",
+        "website": "http://www.campusrec.uci.edu",
+        "category": "Physical"
+    },
+    {
+        "organization": "Campus Assault Resource & Education",
+        "website": "http://www.care.uci.edu/support/index.html",
+        "category": "Mental"
+    },
+    {
+        "organization": "UC Irvine Health",
+        "website": "http://www.ucirvinehealth.org/health-library/diseases-and-conditions",
+        "category": "Physical",
+        "description": "UC Irvine Health provides on-line resources for individuals or health professionals interested in learning on the vast majority of health topics including: alcohol and substance abuse, mental health, sexual health (women’s & men’s sexual health), physical activity (Fitness) and nutrition.",
+        "users": "Both",
+        "hoursOfOperation": "mtuwthf=allday,sa=08:00am-05:00pm",
+        "imageName": "n/a",
+        "phoneNumber": "\"7144567890\"",
+        "email": "organization@example.com",
+        "location": "101 The City Drive South, Orange, CA 92868",
+        "geotag": "n/a"
+    },
+    {
+        "organization": "ZotWheels Program",
+        "website": " https://www.parking.uci.edu/zotwheels/about.cfm",
+        "category": "Physical",
+        "description": "ZotWheels stations will be located at four key locations across campus: Langson Library, Science Library, Physical Sciences, and at the Student Center. Since bikes may not be available at a particular bike station at all times, it is recommended that you first check the interactive map below for current availability. UC Irvine's ZotWheels automated bike sharing has arrived! Transportation and Distribution Services is a leader in alternative transportation solutions, winning awards and accolades from within and outside the university. To add to its sustainability efforts, Parking is bringing ZotWheels, an automated bike sharing system, to the UCI campus. ZotWheels is: - Automated - Member supported - Free to use after joining - Easy to use - Great exercise - Non-polluting - Centrally located - Growing, with more stations planned"
+    },
+    {
+        "organization": "Wellness Ambassadors",
+        "website": "http://www.wellness.uci.edu/ambassador.html",
+        "category": "Physical",
+        "description": "UCI Wellness Ambassadors are volunteers that help to create a culture of health within the workplace by promoting employee participation and engagement in Wellness programs, services and events."
+    },
+    {
+        "organization": "Student Wellness & Health Promotion",
+        "website": "https://studentwellness.uci.edu/topics/mental-health-awareness",
+        "category": "Mental",
+        "description": "Webpage whose purpose is to raise awareness about the mental health continuum, reduce stigma associated with mental illness, promote help seeking behaviors and mental wellness practices, and prevent suicide through individual education and outreach events.Mental Health Awareness Consultations  Consultations - Mental Health Awareness consultations consist of 30-60 minute one-on-one confidential appointments. Please call 949-824-9355 to make an appointment. You can also email Mental Health Awareness Manager, Jasmine A. Blackburn (jablackb@uci.edu) for more information. Workshops Workshops - Are you interested in scheduling an interactive mental health education workshop for a group of 12 or more? Behind Happy Faces is a mental health awareness curriculum especially designed to equip college students with the tools to help them navigate the mental health continuum to support academic success and promote life skills. Email jablackb@uci.edu for more information. On-line youtube educational video series (CrashCourse) discussing psychology, stress, mental health, etc."
+    },
+    {
+        "organization": "Counseling Center",
+        "website": "http://www.counseling.uci.edu/resources/",
+        "category": "Mental",
+        "description": "The Counseling Center is the primary counseling and mental health agency for UC Irvine undergraduate and graduate students. The Counseling Center provides support to the University community through crisis intervention, training regarding mental health issues, and outreach and consultation services. The Center’s services are available and free of charge to currently registered students. Students with chronic and severe mental health issues needing long term and extensive services are referred to other appropriate community providers. 1) Resources for Students a. Counseling center provides UC Irvine students with a broad range of mental health services. They include individual, couples, family, group counseling, and psychotherapy for registered undergraduate, graduate, and professional school students. They also provide urgent care, crisis response, consultation, and outreach programs for the university community. 2) Resources for Faculty and Staff a. As a faculty or staff member of the UC Irvine campus community, you have numerous opportunities to interact with students. At times faculty and staff will have contact with students whose problems or behaviors may cause concern, discomfort, or may interfere with work or the education of other students. The Counseling Center is available to help Faculty and Staff in these situations. The information provided helps faculty and staff identify student concerns, how to respond, and how to utilize campus resources to address these issues. 3) Resources for Parents & Family a. When a student begins his/her university career at UC Irvine it can be a stressful experience for parents and family. Parents and family need to know that the Counseling Center can partner with parents and family in helping your student succeed. It’s important that you not neglect your own feelings when helping your student prepare for this transition. This will help everyone in your family adjust to the many challenges that are ahead. Resources are provided that may help parents and family along the way. 4) Peer Educator Program a. The Peer Educator Program consists of student peers who provide psychoeducational programs and outreach services to the UC Irvine Student community."
+    }
+]

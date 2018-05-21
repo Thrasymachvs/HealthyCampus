@@ -29,11 +29,11 @@
   cursor: pointer;
 
   /*Dropdown Background*/
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: rgb(255, 255, 255, 0.6);
 }
 
 .dropdown dt span:hover {
-  background-color: rgb(255, 255, 255, 0.3);
+  background-color: rgb(255, 255, 255, 0.8);
 }
 
 .dropdown dd {
