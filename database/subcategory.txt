@@ -1,10 +1,10 @@
 [
     {
         "category": "Mental",
-        "description": "This is the mental sutff.|par|We write here to have something not because I care",
+        "description": "This section of the Healthy Campus Initiative aims to improve Mental Health for our students and faculty by providing them with easy accessibility to resources on campus. |par|",
         "hotlines": "National Suicide Prevention Lifeline=8002738255,The National Domestic Violence=8007997233"
     },
     {
         "category": "Physical"
     }
-]
+],

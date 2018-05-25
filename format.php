@@ -10,7 +10,7 @@
 	$valid_sub_col = array("category", "description", "hotlines");
 
 	// Valid category
-	$valid_cat = array("SEXUAL HEALTH", "MENTAL HEALTH", "PHYSICAL ACTIVITY", "ALCOHOL ACTIVITY", "NUTRITION");
+	$valid_cat = array("SEXUAL HEALTH", "MENTAL HEALTH", "PHYSICAL ACTIVITY", "ALCOHOL & OTHER DRUGS", "NUTRITION");
 
 	// Read the content of the text file found in the given path and do a rough format (does not check if the contents are valid)
 	function rawContent($pathName) {
@@ -375,6 +375,17 @@
 
 		return $result;
 	}
+	//Scans the database searching for resources by two categories -- the working group, and who can use the resources. May split into two functions soon, but this is good for now. 
+	function get_user_resources($category, $user, $category_data){
+	$results = array();
+
+	foreach ($category_data as $value){
+		if($value["category"] == $category && $value["users"] == $user){
+			array_push($results, $value);
+	}
+	}
+	return $results;
+}
   	
 	// print_r(formatSubcategoryContent(rawContent("database/subcategory.txt"), $valid_sub_col, $valid_cat));
 	// print_r(rawContent("database/subcategory.txt"));

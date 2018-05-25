@@ -29,7 +29,7 @@
 
 				// '$valid_cat' is the valid category and is listed in the 'format.php'
 				for ($i = 0; $i < count($valid_cat); $i++) { 
-					menuButton($valid_cat[$i], "", $i + 1);
+					menuButton($valid_cat[$i], "category.php?group=".$valid_cat[$i], $i + 1);
 				}
 
 				echo "</nav>";
