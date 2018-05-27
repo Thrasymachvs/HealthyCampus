@@ -1,0 +1,2 @@
+@HOME: change the About 'focus' issue
+@HOME: hamburger menu at certain breakpoint

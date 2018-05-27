@@ -269,7 +269,7 @@
 
 	// Format phone number
 	function _formatPhoneNumber($num) {
-		return "(" . substr($num, 2, 3) . ") " . substr($num, 5, 3) . " - " . substr($num, 8, 4);
+		return "(" . substr($num, 0, 3) . ") " . substr($num, 3, 3) . " - " . substr($num, 6, 4);
 	}
 
 	// Format hotlines
@@ -375,15 +375,19 @@
 
 		return $result;
 	}
+
 	//Scans the database searching for resources by two categories -- the working group, and who can use the resources. May split into two functions soon, but this is good for now. 
 	function get_user_resources($category, $user, $category_data){
-	$results = array();
+		$results = array();
 
-	foreach ($category_data as $value){
-		if($value["category"] == $category && $value["users"] == $user){
-			array_push($results, $value);
-	}
-	}
+			foreach ($category_data as $value){
+				if($value["category"] == $category && $value["users"] == $user){
+					// echo "value organization: " . $value["organization"] . "--";
+					// echo "value users: " . $value["users"] . "--";
+					// echo "user: " . $user . "<br>";
+					array_push($results, $value);
+				}
+			}
 	return $results;
 }
   	
