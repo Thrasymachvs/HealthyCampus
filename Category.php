@@ -30,6 +30,7 @@
 	// echo ucfirst(strval($working_group));
 
 	// Navigation
+	include "modal.php";
 	include 'php_include/navigation.php';
 
 ?>
@@ -46,67 +47,138 @@
 	}
 </style>
 
-<?php
-	echo'
-	<body>
-		<div class = "banner_wrapper">
-			<div class = "Text_wrapper">
-			<br><br><br>
-				<h1>' . ucfirst(strval($working_group)) . ' Health</h1>
-
-				<p class = "text_body"> '; 
-
-				for ($i = 0; $i < count($working_description); $i++){
+<body>
+	<div class = "text_wrapper">
+	<div class = "card">
+		<div class = "container">
+		<?php 
+			echo "<h1>". ucfirst(strval($working_group)) . " Health</h1>
+			<p class = 'text_body'> "; 
+			for ($i = 0; $i < count($working_description); $i++){
 						echo $working_description[$i] . " ";
 					}
+			 ?>
+			</div>
+		</div>
+</div>
+	<div class = "Hotline_wrapper">
+		<div class = "card">
+			<div class = "container">
+			<div id = "Hotline_table">
+				<h2> National Hotlines </h2>
+				<ul>
+					<?php
+						foreach (array_keys($hotlines) as $key){
+									echo "<li>" . $key . "  :  " . $hotlines[$key] .  "</li>";
+								}
+								?>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
 
-	echo ' </p></div>
-			<div class = "Hotline_wrapper"><br><br><br><br><br><br><br><br><br><br>
-				<div class = "v1"></div>
-					<div id = "Hotline_table">
-						<h2> National Hotlines </h2> 
-						<ul>';
+	
+		<div class = "faculty_resources">
+			<div class = "card">
+				<div class = "container">
+			<h3><u>Faculty Resources</u></h3>
+			<ul>
+				<?php
+					foreach($faculty_resources as $key){
+							echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
+						} ?>
+					</ul>
+				</div>
+			</div>
+			</div>
 
-							foreach (array_keys($hotlines) as $key){
-								echo "<li>" . $key . "  :  " . $hotlines[$key] .  "</li>";
-							}
-
-	echo'	
+		<div class = "student_resources">
+			<div class = "card">
+				<div class = "container">
+				<h3> <u>Student Resources</u></h3>
+				<ul>
+					<?php
+							foreach($student_resources as $key){
+								echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
+							} ?>
 						</ul>
 					</div>
 				</div>
 			</div>
 
-			<br><br><br><br><br><br><br><br><br><br><br><br><br>
-	
-			<div class = "resources">
-				<div class="faculty_resources">
-					<h3> Faculty Resources </h3>
-					<ul> ';
-						foreach($faculty_resources as $key){
-							echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
-						}
 
-					echo '</ul>
+
+</body>
+</html>
+
+<!-- <style type="text/css">
+	#container {
+		margin: 0 auto;
+		width: 100%;
+		height: auto;
+		background-color: blue;
+		display: flex;
+		justify-content: center;
+	}
+
+	#content {
+		width: 60%;
+		background-color: yellow;
+	}
+
+	#content * {
+		margin: 10px;
+	}
+
+	#description {
+		height: 250px;
+		background-color: red;
+	}
+
+	#resources {
+		background-color: brown;
+		display: flex;
+		justify-content: center;
+		min-height: 200px;
+		height: auto;
+	}
+
+	#resources * { 
+		width: 50%;
+	}
+
+	#faculty {
+		/*height: 100px;*/
+		background-color: grey;
+	}
+
+	#student {
+		/*height: 100px;*/
+		background-color: lavender;
+	}
+
+	#hotlines {
+		width: 20%;
+		background-color: green;
+	}
+</style>
+
+<div id="container">
+
+	<div id="content">
+
+		<div id="description">Name & Description</div>
 		
-				</div>	
-
-				<div class = "student_resources">
-					<h3> Student Resources </h3>
-
-					<ul>';
-
-
-						foreach($student_resources as $key){
-							echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
-						}
-
-					echo '</ul>
-				</div>
-			<div class = "separator"></div>
+		<div id="resources">
+			
+			<div id="faculty">Faculty Resources</div>
+			
+			<div id="student">Student Resources</div>
 		</div>
-	</body>'
-?>
 
-<!-- The Modal -->
-<?php include "modal.php"?>
+	</div>
+
+	<div id="hotlines">Hotlines</div>
+</div> -->
+
