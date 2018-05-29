@@ -2,7 +2,6 @@ var dropdowns = $(".dropdown");
 
 // Onclick on a dropdown, toggle visibility
 dropdowns.find("dt").click(function(){
-	dropdowns.find("dd ul").hide();
 	$(this).next().children().toggle();
 });
 

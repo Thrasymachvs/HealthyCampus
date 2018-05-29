@@ -1,3 +1,4 @@
 @HOME: change the About 'focus' issue
 @HOME: hamburger menu at certain breakpoint
 @FORMAT: fix formatting in database
+@HOME: allow dropdown choices to link to open modal

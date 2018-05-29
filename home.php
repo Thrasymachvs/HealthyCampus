@@ -24,8 +24,8 @@
 				function dropdown($choices) {
 					// Choose a random element from the list to be default
 					$i = array_rand($choices);
-					echo "<dt><a><span style='font-weight: normal; font-size: 1.5em;'>" . $choices[$i] . "</span></a></dt>";
-					echo "<dd><ul>";
+					echo "<dt><a><span id='choice' style='font-weight: normal; font-size: 1.5em;'>" . $choices[$i] . "</span></a></dt>";
+					echo "<dd><ul style='display:none;'>";
 					echo "<li><a class='selected'>" . $choices[$i] . "</a></li>";
 					
 					// Print the rest in the dropdown menu

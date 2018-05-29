@@ -49,63 +49,66 @@
 
 <body>
 	<div class = "text_wrapper">
-	<div class = "card">
-		<div class = "container">
-		<?php 
-			echo "<h1>". ucfirst(strval($working_group)) . " Health</h1>
-			<p class = 'text_body'> "; 
-			for ($i = 0; $i < count($working_description); $i++){
+		<div class = "card">
+			<div class = "container">
+				<?php 
+					echo "<h1>". ucfirst(strval($working_group)) . " Health</h1> <p class = 'text_body'> "; 
+					for ($i = 0; $i < count($working_description); $i++){
 						echo $working_description[$i] . " ";
 					}
-			 ?>
+					echo "</p>";
+				?>
 			</div>
 		</div>
-</div>
+	</div>
+
 	<div class = "Hotline_wrapper">
 		<div class = "card">
 			<div class = "container">
-			<div id = "Hotline_table">
-				<h2> National Hotlines </h2>
+				<div id = "Hotline_table">
+					<h2> National Hotlines </h2>
+					<ul>
+						<?php
+							foreach (array_keys($hotlines) as $key){
+								echo "<li>" . $key . "  :  " . $hotlines[$key] .  "</li>";
+							}
+						?>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class = "faculty_resources">
+		<div class = "card">
+			<div class = "container">
+				<h3><u>Faculty Resources</u></h3>
 				<ul>
 					<?php
-						foreach (array_keys($hotlines) as $key){
-									echo "<li>" . $key . "  :  " . $hotlines[$key] .  "</li>";
-								}
-								?>
+						foreach($faculty_resources as $key){
+							echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
+						} 
+					?>
 				</ul>
 			</div>
 		</div>
 	</div>
-	</div>
 
-	
-		<div class = "faculty_resources">
-			<div class = "card">
-				<div class = "container">
-			<h3><u>Faculty Resources</u></h3>
-			<ul>
-				<?php
-					foreach($faculty_resources as $key){
-							echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
-						} ?>
-					</ul>
-				</div>
-			</div>
-			</div>
-
-		<div class = "student_resources">
-			<div class = "card">
-				<div class = "container">
-				<h3> <u>Student Resources</u></h3>
+	<div class = "student_resources">
+		<div class = "card">
+			<div class = "container">
+				<h3><u>Student Resources</u></h3>
 				<ul>
 					<?php
-							foreach($student_resources as $key){
-								echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
-							} ?>
-						</ul>
-					</div>
-				</div>
+						foreach($student_resources as $key){
+							echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
+						} 
+					?>
+				</ul>
 			</div>
+		</div>
+	</div>
 
 
 
