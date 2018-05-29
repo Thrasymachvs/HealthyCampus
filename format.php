@@ -404,6 +404,6 @@
 	// print_r(rawContent("database/subcategory.txt"));
 	// print_r(formatOrganizationContent(rawContent("database/organization.txt"), $valid_org_col, $valid_cat));
 	// print_r(rawContent("database/organization.txt"));
-	// print_r(formatContent(rawContent("http://centaurus-2.ics.uci.edu:8926/hcampus/database/organization.txt"), $valid_org_col, $valid_cat));
+	// print_r(formatOrganizationContent(rawContent("http://centaurus-8.ics.uci.edu:8926/hcampus/database/organization.txt"), $valid_org_col, $valid_cat));
 
 ?>
