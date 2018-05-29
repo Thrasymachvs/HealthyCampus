@@ -1,7 +1,7 @@
 <?php
 		
 	// The URL to get to database folder for Healthy Campus
-	$path = "database/";
+	$valid_path = "database/";
 
 	// Valid 'organization' columns
 	$valid_org_col = array("organization", "website", "category", "description", "users", "hoursOfOperation", "imageName", "phoneNumber", "email", "location", "geotag");
@@ -267,8 +267,14 @@
 
 	}
 
+	// Format image path
+	function _formatImage($img) {
+		return "img/" . $img;
+	}
+
 	// Format phone number
 	function _formatPhoneNumber($num) {
+		$num = (strlen($num) > 10) ? substr($num, 2) : $num;
 		return "(" . substr($num, 0, 3) . ") " . substr($num, 3, 3) . " - " . substr($num, 6, 4);
 	}
 
@@ -337,6 +343,9 @@
 
 			// Format Hours of Operation
 			if ($result[$i]["hoursOfOperation"] !== "") { $result[$i]["hoursOfOperation"] = _formatHOF($result[$i]["hoursOfOperation"]); };
+
+			// Format Image Link
+			if ($result[$i]["imageName"] !== "") { $result[$i]["imageName"] = _formatImage($result[$i]["imageName"]); };
 
 			// Format Phone Number
 			if ($result[$i]["phoneNumber"] !== "") { $result[$i]["phoneNumber"] = _formatPhoneNumber($result[$i]["phoneNumber"]); };

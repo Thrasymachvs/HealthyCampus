@@ -1,0 +1,137 @@
+/* The Modal (background) */
+#myModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#modal {
+    /*Initially hide it*/
+    /*display: none;*/
+    position: relative;
+    /*z-index: 1;*/
+    /*margin: auto;*/
+    width: 600px;
+    height: 850px;
+    background-color: white;
+    margin: 3% auto;  /*Will not center vertically and won't work in IE6/7. */
+    /*left: 0;*/
+    /*right: 0;*/
+    /*overflow: auto;*/
+    background-image: url("../img/cardboard.png");
+    /*background-size: ;*/
+}
+
+#close {
+    position: absolute;
+    right: 10px;
+}
+
+#content {
+    padding: 40px 40px;
+    height: 93%;
+}
+
+#content > div {
+    margin: 10px;
+    /*background-color: yellow;*/
+}
+
+#org_name {
+    /*height: 10%;*/
+    width: auto;
+}
+
+#org_name > h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#org_link {
+    width: auto;
+}
+
+#org_link h3 {
+    font-weight: normal;
+    margin: 0;
+}
+
+#org_info {
+    display: flex;
+    justify-content: space-between;
+    height: 25%;
+}
+
+#org_img {
+    height: 100%;
+    width: 250px;
+    overflow: hidden;
+}
+
+#contact_info {
+    height: 100%;
+    width: 225px;
+}
+
+#contact_info > * {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-weight: bold; 
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+#org_img > img {
+    max-width: auto;
+    max-height: 100%;
+}
+
+#hof {
+    width: auto;
+    height: 15%;
+}
+
+#hof > ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    margin: 7px 0;
+    list-style-type: none;
+}
+
+#description {
+    width: auto;
+    min-height: 30%;
+    height: auto;
+}
+
+#description > p {
+    margin-top: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* The Close Button */
+    #close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

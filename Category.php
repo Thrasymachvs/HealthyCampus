@@ -7,8 +7,8 @@
 	$group = $_GET["group"];
 	
 	// Access both 'category' and 'organization' data
-	$category_data = $category_data = formatSubcategoryContent(rawContent($path . "subcategory.txt"), $valid_sub_col, $valid_cat);
-	$organization_data = formatSubcategoryContent(rawContent($path . "organization.txt"), $valid_sub_col, $valid_cat);
+	$category_data = formatSubcategoryContent(rawContent($valid_path . "subcategory.txt"), $valid_sub_col, $valid_cat);
+	$organization_data = formatSubcategoryContent(rawContent($valid_path . "organization.txt"), $valid_sub_col, $valid_cat);
 	// print_r($category_data);
 	// print_r($organization_data);
 	
@@ -34,6 +34,17 @@
 
 ?>
 
+<!-- Modal link style -->
+<!-- Need to move to CSS after the update! -->
+<style type="text/css">
+	.myBtn {
+		cursor: pointer;
+	}
+
+	.myBtn:hover {
+		text-decoration: underline;
+	}
+</style>
 
 <?php
 	echo'
@@ -73,7 +84,7 @@
 					<h3> Faculty Resources </h3>
 					<ul> ';
 						foreach($faculty_resources as $key){
-							echo "<li style = 'font-family: sans-serif;'>" . $key["organization"] . "</li>";
+							echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
 						}
 
 					echo '</ul>
@@ -87,7 +98,7 @@
 
 
 						foreach($student_resources as $key){
-							echo "<li style = 'font-family: sans-serif'>" . $key["organization"] . "</li>";
+							echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
 						}
 
 					echo '</ul>
@@ -97,73 +108,5 @@
 	</body>'
 ?>
 
-<!-- <style type="text/css">
-	#container {
-		margin: 0 auto;
-		width: 100%;
-		height: auto;
-		background-color: blue;
-		display: flex;
-		justify-content: center;
-	}
-
-	#content {
-		width: 60%;
-		background-color: yellow;
-	}
-
-	#content * {
-		margin: 10px;
-	}
-
-	#description {
-		height: 250px;
-		background-color: red;
-	}
-
-	#resources {
-		background-color: brown;
-		display: flex;
-		justify-content: center;
-		min-height: 200px;
-		height: auto;
-	}
-
-	#resources * { 
-		width: 50%;
-	}
-
-	#faculty {
-		/*height: 100px;*/
-		background-color: grey;
-	}
-
-	#student {
-		/*height: 100px;*/
-		background-color: lavender;
-	}
-
-	#hotlines {
-		width: 20%;
-		background-color: green;
-	}
-</style>
-
-<div id="container">
-
-	<div id="content">
-
-		<div id="description">Name & Description</div>
-		
-		<div id="resources">
-			
-			<div id="faculty">Faculty Resources</div>
-			
-			<div id="student">Student Resources</div>
-		</div>
-
-	</div>
-
-	<div id="hotlines">Hotlines</div>
-</div> -->
-
+<!-- The Modal -->
+<?php include "modal.php"?>
