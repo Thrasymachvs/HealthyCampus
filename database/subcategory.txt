@@ -1,0 +1,27 @@
+[
+    {
+        "category": "mental",
+        "description": "Mental health is an aspect of your overall health that refers to your emotional and psychological wellbeing. Life on campus can be stressful for students and professors alike, and we want to make sure that you know you are not alone. Here you will find resources to help you do well and thrive at UCI. Whether you are a student or faculty member, our campus has many resources available to you to help cope with depression, stress, and anxiety. Please view the lists below to find resources that will benefit you. ",
+        "hotlines": "National Suicide Prevention Lifeline=8002738255,The National Domestic Violence=8007997233"
+    },
+    {
+        "category": "physical",
+        "description": "This is the physical sutff.|par|We write here to have something not because I care",
+        "hotlines": "National Coalition Against Domestic Violence=8007997233"
+    },
+    {
+        "category": "alcohol",
+        "description": "This is the alcohol sutff.|par|We write here to have something not because I care",
+        "hotlines": "Substance Abuse and Mental Health Services Administration=8006624357,Alcohol Hotlines=8003312900"
+    },
+    {
+        "category": "sexual",
+        "description": "This is the sexual sutff.|par|We write here to have something not because I care",
+        "hotlines": "National Sexual Assault Telephone Hotline=8006564673"
+    },
+    {
+        "category": "nutrition",
+        "description": "This is the nutrition sutff.|par|We write here to have something not because I care",
+        "hotlines": "The National Association of Anorexia Nervosa and Associated Disorders=8478313438"
+    }
+]

@@ -1,0 +1,75 @@
+/*Note: Give Credit to creator*/
+/* Dropdown style */
+.dropdown {
+  width: 23em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+
+  /*Font*/
+  font-family: 'Open Sans', sans-serif;
+  color: #3B1E1C;
+}
+.dropdown dt a {
+  display: block;
+  height: 2.5em;
+  width: 100%;
+  text-decoration: none;
+}
+.dropdown dt a:hover, .dropdown dt a:active {
+  border-color: #bdc3c7;
+}
+.dropdown dt span {
+  display: block;
+  line-height: 2.5em;
+
+  /*Arrow Image*/
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAKCAYAAACALL/6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHo+AACAQQAA+MoAAIC0AAB48QAA9RwAADw3AAAbzhlfIT4AAACJSURBVHjajNAxCsJAEEbhb5cU4i0sbHIaL6IQTxFPo4VeROwXQs4gKW1cWJZEM90wj5l5f0jDeMXBunqENIw7vLD9A09oIxL6FdsvSCENI2zwxH4BTmgxxeJc92P76cuIpRBuc6K45yZWwzPeleixBOLMr30tWgJZuqwcQJNFy2GzkHeHUMPwGQChFSPmzlJ1WgAAAABJRU5ErkJggg==) no-repeat scroll right center;
+
+  border-right: 1em solid transparent;
+  cursor: pointer;
+
+  /*Dropdown Background*/
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+.dropdown dt span:hover {
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
+.dropdown dd {
+  position: relative;
+}
+
+/*Dropdown choices*/
+.dropdown dd ul {
+  display: none;
+  position: absolute;
+  top: 1.1em;
+  right: -0.1em;
+  width: 112%;
+  list-style: none;
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #bdc3c7;
+  border-radius: 3px;
+
+  /*Modification*/
+  padding: 0;
+  margin: 0;
+}
+.dropdown dd li a {
+  display: block;
+  padding: 0 1em;
+  line-height: 2.5em;
+  text-decoration: none;
+  border: 3px solid #fff;
+}
+.dropdown dd li a:hover {
+  background-color: #FFF568;
+  color: #3B1E1C ;
+  cursor: pointer;
+}
+
+/*Style change for the selected topic*/
+.selected {
+  font-weight: 700;
+}
