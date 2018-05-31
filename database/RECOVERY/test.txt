@@ -1,0 +1,14 @@
+[
+    {
+        "organization": "Test Organization",
+        "website": "http://www.testorg.com",
+        "category": "Mental",
+        "description": "At the University of California, Irvine, providing equal opportunities for students with disabilities is a campus-wide responsibility and commitment. Dsiabilities include, but are not limited to, orthopedic, visual, hearing, learning, chronic health and psychological disabilities.|par|UCI demonstrates its core values of individual growth and development and civility and diversity by recognizing students with disabilities as an important part of its student body.",
+        "users": "Student",
+        "hoursOfOperation": "mtuwthf=allday,sa=8:00am-05:00pm",
+        "imageName": "test.jpg",
+        "phoneNumber": "\"7144567890\"",
+        "email": "organization@example.com",
+        "location": "101 The City Drive South, Orange, CA 92868"
+    }
+]

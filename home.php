@@ -18,7 +18,8 @@
 		<div id="search">
 			
 			<?php
-				$dropdown_choices = array("Counseling Services" , "Fitness Groups" , "Anxiety Resources");
+				// $dropdown_choices = array("Counseling Services" , "Fitness Groups" , "Anxiety Resources");
+			$dropdown_choices = Format::$dropdown_choices;
 				// Description: Create the dropdown menu
 				// Parameter: $choice: list of choices in dropdown menu
 				function dropdown($choices) {

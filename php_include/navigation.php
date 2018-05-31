@@ -19,6 +19,7 @@
 	echo "<nav>";
 
 	// '$valid_cat' is the valid category and is listed in the 'format.php'
+	$valid_cat = Format::$valid_cat;
 	for ($i = 0; $i < count($valid_cat); $i++) { 
 		$value = strtolower(str_replace(" ", "_", $valid_cat[$i]));
 		menuButton($valid_cat[$i], "Category.php?group=" . $value, $i + 1);

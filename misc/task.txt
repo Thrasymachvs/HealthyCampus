@@ -2,3 +2,5 @@
 @HOME: hamburger menu at certain breakpoint
 @FORMAT: fix formatting in database
 @HOME: allow dropdown choices to link to open modal
+@FORMAT: ensure that there is a failsafe when the updated file is corrupted
+@FORMAT: check that a single apostrophe work (doesn't show '?')

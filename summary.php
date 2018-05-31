@@ -1,10 +1,11 @@
 <?php
 	
 	$orgName = (strpos($_GET["orgName"], "and") === false) ? $_GET["orgName"]: str_replace("and", "&", $_GET["orgName"]);
+	// echo $orgName ."<br>";
 	// echo $orgName;
 
 	include 'format.php';
-	$organization = formatOrganizationContent(rawContent("database/organization.txt"), $valid_org_col, $valid_cat);
+	$organization = Format::formatOrganizationContent("database/organization.txt", "database/RECOVERY/organization.txt");
 	// print_r($organization);
 
 	// Access the chosen productid

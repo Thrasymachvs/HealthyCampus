@@ -1,6 +1,7 @@
 GENERAL FORMATTING RULE:
 	- Do not include font-style such as bolded or italicized words.
-	- If any of the fields are left blank, it will have a message in the website that the information is unavailable.
+	- REQUIRED FIELDS: Organization, Category, Website
+	- If any of the other fields are left blank, it will have a message in the website that the information is unavailable.
 	- For single quote, make to have a backlash for it -> example: "you\'re"
 
 [organization.txt] - Contains the information for each organziation in healthy campus webiste
