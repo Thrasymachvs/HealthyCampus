@@ -1,8 +1,8 @@
 GENERAL FORMATTING RULE:
+	- Do not copy and paste from the other sites. Will result in displaying special random characters
 	- Do not include font-style such as bolded or italicized words.
 	- REQUIRED FIELDS: Organization, Category, Website
 	- If any of the other fields are left blank, it will have a message in the website that the information is unavailable.
-	- For single quote, make to have a backlash for it -> example: "you\'re"
 
 [organization.txt] - Contains the information for each organziation in healthy campus webiste
 	$Format
@@ -52,7 +52,7 @@ GENERAL FORMATTING RULE:
 			- PHYSICAL
 			- MENTAL
 			- NUTRITION
-			- DRUGS
+			- ALCOHOL
 			- SEXUAL
 			*Not case sensitive
 		- "Description": No limitations; What's written will be shown the exact same way in the website. If want to start another paragraph need to enter "|par|"

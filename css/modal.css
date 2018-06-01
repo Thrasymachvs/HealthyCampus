@@ -20,7 +20,8 @@
     /*z-index: 1;*/
     /*margin: auto;*/
     width: 600px;
-    height: 850px;
+    min-height: 800px;
+    height: auto;
     background-color: white;
     margin: 3% auto;  /*Will not center vertically and won't work in IE6/7. */
     /*left: 0;*/
@@ -37,7 +38,7 @@
 
 #content {
     padding: 40px 40px;
-    height: 93%;
+    height: auto;
 }
 
 #content > div {
@@ -67,12 +68,12 @@
 #org_info {
     display: flex;
     justify-content: space-between;
-    height: 25%;
+    height: 230px;
 }
 
 #org_img {
     height: 100%;
-    width: 250px;
+    /*width: 250px;*/
     overflow: hidden;
 }
 
@@ -98,7 +99,7 @@
 
 #hof {
     width: auto;
-    height: 15%;
+    height: 135px;
 }
 
 #hof > ul {
@@ -111,7 +112,7 @@
 
 #description {
     width: auto;
-    min-height: 30%;
+    min-height: 100px;
     height: auto;
 }
 

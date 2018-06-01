@@ -17,7 +17,7 @@ body {
 }
 
 /*Default font*/
-.subcategory p, #button a,
+#button a,
 #search p, #submit_search {
   font-size: 1.5em;
   /*font-family: "Bitter", sans-serif;*/
@@ -25,7 +25,7 @@ body {
   font-weight: bold;
 }
 
-.subcategory p, #button a { 
+#button a { 
 	color: rgb(65, 64, 66);
 }
 
@@ -35,126 +35,173 @@ body {
 	color: #fff;
 }
 
-/*Navigation Bar*/
-#navbar nav {
-	padding: 3.5em 0;
-	text-align: center;
+
+@media screen and (min-width: 1077px)
+{
+  /*Search Bar*/
+  #search {
+  	padding: 6.5em 0;
+  	text-align: center;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-image: url("../img/cardboard.png");
+  }
+
+  #search p { margin-right: 1em;}
+
+  #search > *{
+  	/*Stack each subcategory horizontally*/
+  	margin: 0;
+  	display: inline-block;
+  }
+
+  /*Search Button*/
+  #submit_search {
+    display: inline-block;
+    margin-left: 2em;
+    padding: 0.6em 1.1em;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;	
+  	color: #381B1B;
+    background-color: #00BFF3;
+    border: none;
+
+    /*Animation*/
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    cursor: pointer;
+  }
+
+  #submit_search:before {
+  	content: '';
+    position: absolute;
+    border: #00BFF3 solid 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left;
+  }
+
+  #submit_search:hover:before, #submit_search:focus:before, #submit_search:active:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+  }
+
+
+  #chevron {
+    position: absolute;
+    bottom: 4.5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+  }
+
+  #button {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+  }
+
+  #button a {
+    text-decoration: none;
+  }
 }
 
-#navbar nav a { text-decoration: none; }
+@media screen and (max-width: 1076px)
+{
+  /*Search Bar*/
+  #search {
+    padding: 6.5em 0;
+    text-align: center;
+    display: block;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-image: url("../img/cardboard.png");
+  }
 
-.subcategory {
-	/*Note: Creates the circle*/
-	width: 10em;
-	height: 10em;
-	border-radius: 50%;
-	/*background-color: #B8B8B8;*/
-  /*background-image: url("../img/button/button_1.png");*/
-  /*background-size: 100% auto;*/
+  #search p { 
+    margin-bottom: 20px;
+  }
+
+  #search > *{
+    /*Stack each subcategory horizontally*/
+    /*margin: 0;*/
+    /*display: inline-block;*/
+  }
+
+  /*Search Button*/
+  #submit_search {
+    display: inline-block;
+    /*margin-left: 2em;*/
+    width: 368px;
+    margin-top: 20px;
+    padding: 0.6em 1.1em;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0; 
+    color: #381B1B;
+    background-color: #00BFF3;
+    border: none;
+
+    /*Animation*/
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    cursor: pointer;
+  }
+
+  #submit_search:before {
+    content: '';
+    position: absolute;
+    border: #00BFF3 solid 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left;
+  }
+
+  #submit_search:hover:before, #submit_search:focus:before, #submit_search:active:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+  }
 
 
-	/*Stack each subcategory horizontally*/
-	display: inline-block;
-	text-align: center;	
-	vertical-align: middle; /*Ensure that there's no 'baseline' issue*/
+  #chevron {
+    position: absolute;
+    bottom: 4.5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+  }
 
-	/*Note: Spacing in between menu items*/
-	margin: 0 3em;
+  #button {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+  }
 
-	/*Animation*/
-	-webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  #button a {
+    text-decoration: none;
+  }
 }
-
-.subcategory:hover, .subcategory:focus, .subcategory:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-}
-
-/*Search Bar*/
-#search {
-	padding: 6.5em 0;
-	text-align: center;
-  background-color: rgb(0, 0, 0, 0.4);
-  background-image: url("../img/cardboard.png");
-}
-
-#search p { margin-right:  1em;}
-
-#search > *{
-	/*Stack each subcategory horizontally*/
-	margin: 0;
-	display: inline-block;
-}
-
-/*Search Button*/
-#submit_search {
-  display: inline-block;
-  margin-left: 2em;
-  padding: 0.6em 1.1em;
-  appearance: none;
-  box-shadow: none;
-  border-radius: 0;	
-	color: #381B1B;
-  background-color: #00BFF3;
-  border: none;
-
-  /*Animation*/
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  cursor: pointer;
-}
-
-#submit_search:before {
-	content: '';
-  position: absolute;
-  border: #00BFF3 solid 4px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: top, right, bottom, left;
-  transition-property: top, right, bottom, left;
-}
-
-#submit_search:hover:before, #submit_search:focus:before, #submit_search:active:before {
-  top: -8px;
-  right: -8px;
-  bottom: -8px;
-  left: -8px;
-}
-
-
-#chevron {
-  position: absolute;
-  bottom: 4.5%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
-}
-
-#button {
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
-}
-
-#button a {
-  text-decoration: none;
-}
-
-
 
 
 
@@ -172,6 +219,10 @@ body {
   margin: 4em 8em 8em 8em;
   padding: 3em 3em 3em 3em;
   background-image: url("../img/ep_naturalwhite.png");
+}
+
+#about:focus {
+  outline: none;
 }
 
 #about h1 {

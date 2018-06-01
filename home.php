@@ -12,7 +12,11 @@
 		
 		<!-- Navigation -->
 		<?php 
-			include 'php_include/navigation.php'
+			include 'php_include/navigation.php';
+
+			// Modal - The pop up page
+			include "modal.php";
+			$organization_data = Format::formatOrganizationContent("database/organization.txt", "database/RECOVERY/organization.txt");
 		?>
 		
 		<div id="search">
@@ -77,14 +81,27 @@
 </body>
 <script src="js/dropdown.js"></script>
 <script src="js/smooth_scroll.js"></script>
+<!-- Allow modal to open and close and display the correct information -->
+<script src="js/modal.js"></script>
 <script type="text/javascript">
-	
+
 	$(document).ready(function() {
 
-		// Check what's selected
+		// Check what's selected after pressing 'Search'
 		$("#submit_search").click(function() {
+
+			// Determine which on the dropdown choices are selected
 			var selected = $("dt a span").html();
-			alert(selected);
+			// alert(selected);
+
+			// A modal will open and display information based on the selected choice
+			if (selected == "Counseling Services") {
+				openModal("Test Organization");
+			} else if (selected == "Fitness Groups") {
+				openModal("Counseling Center");
+			} else if (selected == "Anxiety Resources") {
+				openModal("Disability Services Center");
+			}
 		});
 
 

@@ -19,6 +19,3 @@
     </div>
 
 </div>
-
-<!-- Allow modal to open and close and display the correct information -->
-<script src="js/modal.js"></script>

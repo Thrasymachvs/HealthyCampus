@@ -25,14 +25,16 @@
 	
 	// Access Faculty' resrouces
 	// echo ucfirst(strval($working_group));
-	$faculty_resources = Format::get_user_resources(ucfirst($working_group), "Faculty", $organization_data);
+	$faculty_resources = Format::get_user_resources($working_group, "Faculty", $organization_data);
 
 	// Access 'Student' resrouces
-	$student_resources = Format::get_user_resources(ucfirst($working_group), "Student", $organization_data);
+	$student_resources = Format::get_user_resources($working_group, "Student", $organization_data);
 	// echo ucfirst(strval($working_group));
 
-	// Navigation
+	// Modal - The pop up page
 	include "modal.php";
+
+	// Navigation
 	include 'php_include/navigation.php';
 
 ?>
@@ -54,11 +56,11 @@
 		<div class = "card">
 			<div class = "container">
 				<?php 
-					echo "<h1>". ucfirst(strval($working_group)) . " Health</h1> <p class = 'text_body'> "; 
+					echo "<h1>". ucfirst(strval($working_group)) . " Health</h1>"; 
 					for ($i = 0; $i < count($working_description); $i++){
-						echo $working_description[$i] . " ";
+						echo "<p class = 'text_body'>" . $working_description[$i] . "</p>";
 					}
-					echo "</p>";
+					// echo "</p>";
 				?>
 			</div>
 		</div>
@@ -112,6 +114,9 @@
 		</div>
 	</div>
 
+
+	<!-- Allow modal to open and close and display the correct information -->
+	<script src="js/modal.js"></script>
 
 
 </body>
