@@ -1,4 +1,4 @@
-body{
+/*body{
 	 background-image: url("../img/background_pattern_1.png");
 }
 
@@ -16,20 +16,35 @@ h3{
 
 h2 {
 	font-family: "Bitter", sans-serif;
-	text-align:left;
+	text-align:center;
 	}
 
 li {
 	font-family: "Bitter", sans-serif;
 
+}*/
+
+.header{
+	font-family: "Bitter", sans-serif;
 }
 
-.v1{
+.text {
+	font-family: "Bitter", sans-serif;
+}
+
+.text_blue{
+	font-weight: bold;
+	font-family: "bitter", sans-serif;
+	color: darkblue;
+}
+
+.viewport{
+	margin: 0 auto;
 	
-	border-left: 3px solid black;
-	height: 200px; 
-	position: absolute;
-	}
+	width: 80%;
+	height: 100%;
+	
+}
 
 
 .banner_wrapper{
@@ -41,117 +56,76 @@ li {
 
 
 .Hotline_wrapper{
-	height:50%;
-	display:inline-block;
-	display*:inline;
 	
 	display:inline-block;
 	display*:inline;
-
+	
 	float:right;
 	
-	width: 39%;
+	width: 20%;
 }
 
 .Text_wrapper{
-	padding-left:100px;
-	display:inline-block;
+	float: left;
+		display:inline-block;
 	display*:inline;
-	
-	width: 50%;
+	height:auto;
+	width:79%;
 
 }	
 
-body {
-
-	background-color: #f2f2f2;
-}
 
 .text_body{
 	font-family: "Bitter", sans-serif;
 	margin-left: 50px;}
 
-#Faculty_Table{
-		padding-left:50px;
-		display:inline-block;
-		display*:inline;
-	margin-left: 300px;
 
-	
-}
 
-#Student_Table {
-	display:inline-block;
-	display*:inline;
-	zoom: 1;
-	
-}
 
-ul {
 
-	
-	zoom : 1;
-
-}
-
-#Hotline_table{
-	padding-left: 20px;
-
-	
-	
-
-}
-
-.resources{
-	
-	display:inline-block;
-	display*:inline;
-	padding-left:100px;
-	float:center;
-	width:100%
-
-}
 .faculty_resources{
+	padding-top: 10px;
 	display:inline-block;
 	display*inline;
 	float:left;
-	width:25%
+	width:49%;
+	height: auto;
 
 }
-.separator{
-	border-right: 3px solid black;
-	height: 300px; 
-	
-	width:24%;
-	position: absolute;
 
-}
 .student_resources{
+	padding-top: 10px;
+	
 	display: inline-block;
 	display*inline;
-
-	float:left;
-	width:25%;
+	float: right;
+	height: auto;
+	width:49%;
 
 }
 
-
-body {
-	/*Ensure that there's no white space on the border*/
-	margin: 0 auto;
+.elem{
+	padding-top: 10px;
+	float: right;
+	width: 20%;
+	
 }
 
-.wrapper {
-   /*Note: By setting height to 100%, the background will cover the whole header of the homepage*/
-  height: 100%;
-
-  /*Background Image and not repeating*/
-  background-image: url("../img/background_pattern_1.png");
-
-  /*Format: Width, Height*/
-  background-size: 600px 600px;
+.card {
+	background-color:#f2f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
 /*Default font*/
 .subcategory p, #button a,
 #search p, #submit_search {
