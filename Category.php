@@ -5,7 +5,7 @@
 
 	// Access the chosen group
 	$group = $_GET["group"];
-	
+		$bg_image = "img/bg/" . $group . ".png";
 	// Access both 'category' and 'organization' data
 	// $category_data = formatSubcategoryContent(rawContent($valid_path . "subcategory.txt"), $valid_sub_col, $valid_cat);
 	$category_data = Format::formatSubcategoryContent("database/subcategory.txt", "database/RECOVERY/subcategory.txt");
@@ -42,6 +42,9 @@
 <!-- Modal link style -->
 <!-- Need to move to CSS after the update! -->
 <style type="text/css">
+body{
+	background-image: url(<?php echo $bg_image?>);
+}
 	.myBtn {
 		cursor: pointer;
 	}
@@ -52,11 +55,12 @@
 </style>
 
 <body>
+	<div class = "viewport">
 	<div class = "text_wrapper">
 		<div class = "card">
 			<div class = "container">
 				<?php 
-					echo "<h1>". ucfirst(strval($working_group)) . " Health</h1>"; 
+					echo "<h1 class = 'header'>". ucfirst(strval($working_group)) . " Health</h1>"; 
 					for ($i = 0; $i < count($working_description); $i++){
 						echo "<p class = 'text_body'>" . $working_description[$i] . "</p>";
 					}
@@ -64,30 +68,11 @@
 				?>
 			</div>
 		</div>
-	</div>
-
-	<div class = "Hotline_wrapper">
+		
+		<div class = "faculty_resources">
 		<div class = "card">
 			<div class = "container">
-				<div id = "Hotline_table">
-					<h2> National Hotlines </h2>
-					<ul>
-						<?php
-							foreach (array_keys($hotlines) as $key){
-								echo "<li>" . $key . "  :  " . $hotlines[$key] .  "</li>";
-							}
-						?>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	
-	<div class = "faculty_resources">
-		<div class = "card">
-			<div class = "container">
-				<h3><u>Faculty Resources</u></h3>
+				<h3 class = 'header'><u>Faculty Resources</u></h3>
 				<ul>
 					<?php
 						foreach($faculty_resources as $key){
@@ -102,7 +87,7 @@
 	<div class = "student_resources">
 		<div class = "card">
 			<div class = "container">
-				<h3><u>Student Resources</u></h3>
+				<h3 class = 'header'><u>Student Resources</u></h3>
 				<ul>
 					<?php
 						foreach($student_resources as $key){
@@ -113,6 +98,30 @@
 			</div>
 		</div>
 	</div>
+
+</div>
+<div class = "Hotline_wrapper">
+		<div class = "card">
+			<div class = "container">
+				<div id = "Hotline_table">
+					<h2 class = 'header'> National Hotlines </h2>
+					<ul>
+						<?php
+							foreach (array_keys($hotlines) as $key){
+								echo "<li class = 'text'>" . $key . "  : <br> <p class = 'text_blue'> " . $hotlines[$key] .  "</p></li>";
+							}
+						?>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	
+
+	
+
 
 
 	<!-- Allow modal to open and close and display the correct information -->
