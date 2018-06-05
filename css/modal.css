@@ -2,7 +2,7 @@
 #myModal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 10; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -15,20 +15,18 @@
 /* Modal Content */
 #modal {
     /*Initially hide it*/
-    /*display: none;*/
     position: relative;
-    /*z-index: 1;*/
-    /*margin: auto;*/
-    width: 600px;
+    width: 630px;
     min-height: 800px;
     height: auto;
     background-color: white;
     margin: 3% auto;  /*Will not center vertically and won't work in IE6/7. */
-    /*left: 0;*/
-    /*right: 0;*/
-    /*overflow: auto;*/
-    background-image: url("../img/cardboard.png");
+    background-image: url("../img/modal_background.png");
     /*background-size: ;*/
+}
+
+#modal * {
+    font-family: "Garamond";
 }
 
 #close {
@@ -37,17 +35,15 @@
 }
 
 #content {
-    padding: 40px 40px;
+    padding: 40px 65px;
     height: auto;
 }
 
 #content > div {
     margin: 10px;
-    /*background-color: yellow;*/
 }
 
 #org_name {
-    /*height: 10%;*/
     width: auto;
 }
 
@@ -62,7 +58,17 @@
 
 #org_link h3 {
     font-weight: normal;
+    font-style: italic;
     margin: 0;
+}
+
+#org_link a {
+    text-decoration: none;
+    color: DarkBlue;
+}
+
+#org_link a:hover {
+    text-decoration: underline;
 }
 
 #org_info {
@@ -73,13 +79,13 @@
 
 #org_img {
     height: 100%;
-    /*width: 250px;*/
+    width: 230px;
     overflow: hidden;
 }
 
 #contact_info {
     height: 100%;
-    width: 225px;
+    width: 215px;
 }
 
 #contact_info > * {
@@ -89,7 +95,7 @@
 .title {
     font-weight: bold; 
     margin: 0;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 #org_img > img {
@@ -99,14 +105,15 @@
 
 #hof {
     width: auto;
-    height: 135px;
+    height: 115px;
 }
 
 #hof > ul {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
-    margin: 7px 0;
+    padding-left: 0;
+    margin: 10px 0;
     list-style-type: none;
 }
 
@@ -123,7 +130,7 @@
 }
 
 /* The Close Button */
-    #close {
+#close {
     color: #aaaaaa;
     float: right;
     font-size: 35px;

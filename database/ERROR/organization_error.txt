@@ -1,1 +1,2 @@
-Error: Organization database failed to load! -- Invalid Format - phoneNumber: 482432 -- LOCATED IN: Employee Assistance Program
+Tuesday 5th of June 2018 08:49:05 AM|Invalid Format - category: Mental, Sexual|Campus Assault Resource & Education
+

@@ -31,6 +31,19 @@
 		echo "</a>";
 	}
 
+	// Description: List menu items horizontally
+	// Parameter:
+	// 		- $subname: The name of the button
+	// 		- $link: The link of the button
+	//		- $num: Define which button to use
+	function hamMenuButton($subname, $link) {
+		echo "<a href='" . $link . "'>";
+		echo "<li>";
+		echo $subname;
+		echo "</li>";
+		echo "</a>";
+	}
+
 	echo "<div id='navbar'>";
 	echo "<nav>";
 
@@ -73,11 +86,17 @@
 		    but hey, it's pure CSS magic.
 		    -->
 		    <ul id="menu">
-			      <a href="#"><li>Home</li></a>
-			      <a href="#"><li>About</li></a>
+			      <a href="home.php"><li>HOME</li></a>
+			      <?php
+					for ($i = 0; $i < count($valid_cat); $i++) { 
+						$value = strtolower(str_replace(" ", "_", $valid_cat[$i]));
+						hamMenuButton($valid_cat[$i], "Category.php?group=" . $value);
+					}
+			      ?>
+<!-- 			      <a href="#"><li>About</li></a>
 			      <a href="#"><li>Info</li></a>
 			      <a href="#"><li>Contact</li></a>
-			      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+			      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a> -->
 		    </ul>
 		  </div>
 	</nav>

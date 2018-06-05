@@ -23,7 +23,7 @@
 	$result = $result . "</div>";
 
 	$result = $result . "<div id='hof'>";
-	$result = $result . "<p class='title'>hours of operation:</p>";
+	$result = $result . "<p class='title'>Hours of operation:</p>";
 	$result = $result . "<ul>";
 	
 	// Print Hours of Operation

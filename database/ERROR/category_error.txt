@@ -1,1 +1,1 @@
-Error: Category database failed to load! -- Invalid Format - category: This field is required -- LOCATED IN: error
+Tuesday 5th of June 2018 08:25:58 AM|Invalid Format - category: seual|seual

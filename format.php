@@ -70,23 +70,25 @@
 				$check = self::checkValidity($result[$i]);
 				if (!$check["Bool"]) {
 
+					echo "ERROR<br>";
+					echo $check['Name'] . "<br>";
+					echo $check['Error'] . "<br>";
+					
 					// Update the 'corrupted' file with the recorvery file
 					copy($recovery_path, $original_path);
 
 					// Update the error for the organization page
-					$error = "Error: Organization database failed to load! -- " . $check["Error"] . " -- LOCATED IN: " . $check['Name'];
+					$error = date("l jS \of F Y h:i:s A") . "|" . $check["Error"] . "|" . $check['Name'];
 					
 					// Open Error Log
 					$myfile = fopen("database/ERROR/organization_error.txt", "w") or die("Unable to open file!");
 
 					// Put the error in the 'error' text
-					$txt = $error . "\n";
+					$txt = $error . "\n\n";
 					fwrite($myfile, $txt);
 
 					// Close Error Log
 					fclose($myfile);
-
-					echo "ERROR @ Organization <br>";
 
 					// Run the function again with the valid information
 					return self::formatOrganizationContent($original_path, $recovery_path);
@@ -157,7 +159,7 @@
 					copy($recovery_path, $original_path);
 
 					// Update the error for the organization page -- CHANGE CHECK VALIDITY
-					$error = "Error: Category database failed to load! -- " . $check["Error"] . " -- LOCATED IN: " . $check['Name'];
+					$error = date("l jS \of F Y h:i:s A") . "|" . $check["Error"] . "|" . $check['Name'];
 					
 					// Open Error Log
 					$myfile = fopen("database/ERROR/category_error.txt", "w") or die("Unable to open file!");
@@ -168,8 +170,6 @@
 
 					// Close Error Log
 					fclose($myfile);
-
-					echo "ERROR @ Category <br>";
 
 					// Run the function again with the valid information
 					return self::formatSubcategoryContent($original_path, $recovery_path);
@@ -217,7 +217,6 @@
 			$file = fopen($pathName, "r");
 			$size = filesize($pathName);
 			$text = fread($file, $size);
-			// fclose($file);
 
 			// Remove the uunnecessary characters
 			$string = substr(str_replace("\n", "", $text), 7, -8);
@@ -273,6 +272,7 @@
 				
 			}
 
+			fclose($file);
 			return $result;
 		}
 
@@ -294,9 +294,9 @@
 			 	
 			 	// If the value is an error, return the error
 			 	if ($value == "error") {
-			 			echo "here<br>";
+
 			 			$result["Bool"] = false;
-			 			$result["Error"] = "Invalid Format - " . $key . ": This field is required";
+			 			$result["Error"] = "Invalid Format - " . strtoupper($key) . " field is required";
 			 			return $result;
 			 	}
 
@@ -312,7 +312,7 @@
 			 	} elseif ($key == "category") {
 
 			 		// If the category is not in the $valid_cat array, return FALSE
-			 		if(self::_checkCategory($value) === 0) {
+			 		if(self::_checkCategory($value) == '') {
 			 			$result["Bool"] = false;
 			 			$result["Error"] = "Invalid Format - category: " . $value;
 			 			return $result;
@@ -536,7 +536,17 @@
 		// Parameter(s):
 		// 		- $selected: The specified category
 		private static function _checkCategory($selected) {
-			return in_array(strtoupper($selected), self::$valid_cat);
+			
+			// Initialize an empty array
+			$result = array();
+
+			// Get the first word of the category and place them in the array above - used to check if category is valid in the database
+			for ($i = 0; $i < count(self::$valid_cat); $i++) { 
+				$first = explode(' ',trim(self::$valid_cat[$i]));
+				array_push($result, $first[0]);
+			}
+
+			return in_array(strtoupper($selected), $result);
 		}
 
 		// Description: Checks if the 'user' is a valid user
@@ -665,4 +675,5 @@
 			return true;
 		}
 	}
+
 ?>

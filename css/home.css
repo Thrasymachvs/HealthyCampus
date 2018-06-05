@@ -36,7 +36,7 @@ body {
 }
 
 
-@media screen and (min-width: 1077px)
+@media screen and (min-width: 1090px)
 {
   /*Search Bar*/
   #search {
@@ -117,7 +117,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1076px)
+@media screen and (max-width: 1089px)
 {
   /*Search Bar*/
   #search {
@@ -158,6 +158,8 @@ body {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     cursor: pointer;
+
+    z-index: 0;
   }
 
   #submit_search:before {
