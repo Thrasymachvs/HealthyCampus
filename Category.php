@@ -5,7 +5,10 @@
 
 	// Access the chosen group
 	$group = $_GET["group"];
+
+
 		$bg_image = "img/bg/" . $group . ".png";
+	
 	// Access both 'category' and 'organization' data
 	// $category_data = formatSubcategoryContent(rawContent($valid_path . "subcategory.txt"), $valid_sub_col, $valid_cat);
 	$category_data = Format::formatSubcategoryContent("database/subcategory.txt", "database/RECOVERY/subcategory.txt");
@@ -20,6 +23,15 @@
 
 	// Access the information that holds the information of the specified category
 	$working_group = $category_data[$key]["category"];
+	if ($working_group == "alcohol"){
+		$title = "Alcohol & Other Drugs";
+	}
+	else if ($working_group == "nutrition"){
+		$title = "Nutritional";
+	}
+	else{
+		$title = ucfirst(strval($working_group));
+	}
 	$working_description = $category_data[$key]["description"];
 	$hotlines= $category_data[$key]["hotlines"];
 	
@@ -60,7 +72,7 @@ body{
 		<div class = "card">
 			<div class = "container">
 				<?php 
-					echo "<h1 class = 'header'>". ucfirst(strval($working_group)) . " Health</h1>"; 
+					echo "<h1 class = 'header'>". $title . " Health</h1>"; 
 					for ($i = 0; $i < count($working_description); $i++){
 						echo "<p class = 'text_body'>" . $working_description[$i] . "</p>";
 					}
@@ -68,15 +80,15 @@ body{
 				?>
 			</div>
 		</div>
-		
+
 		<div class = "faculty_resources">
 		<div class = "card">
 			<div class = "container">
-				<h3 class = 'header'><u>Faculty Resources</u></h3>
+				<h3 class = 'header'>Faculty Resource Links</h3>
 				<ul>
 					<?php
 						foreach($faculty_resources as $key){
-							echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
+							echo "<li class = 'text_setting'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
 						} 
 					?>
 				</ul>
@@ -87,17 +99,18 @@ body{
 	<div class = "student_resources">
 		<div class = "card">
 			<div class = "container">
-				<h3 class = 'header'><u>Student Resources</u></h3>
+				<h3 class = 'header'>Student Resource Links</h3>
 				<ul>
 					<?php
 						foreach($student_resources as $key){
-							echo "<li style = 'font-family: sans-serif;'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
+							echo "<li class = 'text_setting'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
 						} 
 					?>
 				</ul>
 			</div>
 		</div>
 	</div>
+
 
 </div>
 <div class = "Hotline_wrapper">
@@ -108,7 +121,7 @@ body{
 					<ul>
 						<?php
 							foreach (array_keys($hotlines) as $key){
-								echo "<li class = 'text'>" . $key . "  : <br> <p class = 'text_blue'> " . $hotlines[$key] .  "</p></li>";
+								echo "<li class ='header'>" . $key . "  : <br> <p class = 'number_text'> " . $hotlines[$key] .  "</p></li>";
 							}
 						?>
 					</ul>
