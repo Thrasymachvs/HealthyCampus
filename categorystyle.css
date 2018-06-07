@@ -1,0 +1,164 @@
+/*body{
+	 background-image: url("../img/background_pattern_1.png");
+}
+
+
+h1{
+
+	font-family: sans-serif;
+	margin-left: 50px;
+	padding: 0 0 0 0;
+}
+
+h3{
+	font-family: sans-serif;
+}
+
+h2 {
+	font-family: "Bitter", sans-serif;
+	text-align:center;
+	}
+
+li {
+	font-family: "Bitter", sans-serif;
+
+}*/
+
+.text_setting {
+	font-weight: bold;
+	padding-bottom: 5px;
+	font-family: "Bitter", sans-serif;
+	color: #2F4F4F;
+}
+
+.number_text{
+	font-weight: bold;
+	font-family: "bitter", sans-serif;
+	color: #2F4F4F ;}
+
+.text_body{
+	font-family: "Bitter", sans-serif;
+	margin-left: 50px;}
+
+
+.card {
+
+	background-color:#f2f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.header{
+	font-family: "Bitter", sans-serif;
+}
+
+@media screen and (min-width: 1230px){
+
+
+
+.viewport{
+	margin: 0 auto;
+	
+	width: 80%;
+	height: 100%;
+	
+}
+
+
+.banner_wrapper{
+
+	width: 100%;
+	height: 10%;
+}
+
+
+
+.Hotline_wrapper{
+	
+	display:inline-block;
+	display*:inline;
+	
+	float:right;
+	
+	width: 20%;
+}
+
+.Text_wrapper{
+	float: left;
+		display:inline-block;
+	display*:inline;
+	height:auto;
+	width:79%;
+
+}	
+
+
+
+
+
+.resources{
+	display: table;
+	width: 100%;
+}
+
+
+.faculty_resources{
+	display: table-cell;
+	padding-top: 10px;
+	display:inline-block;
+	display*inline;
+	float:left;
+	width:49%;
+	height: auto;
+
+}
+
+.student_resources{
+	display: table-cell;
+	padding-top: 10px;
+	
+	display: inline-block;
+	display*inline;
+	float: right;
+	height: auto;
+	width:49%;
+
+}
+
+.elem{
+	padding-top: 10px;
+	float: right;
+	width: 20%;
+	
+}
+
+
+/*Default font*/
+.subcategory p, #button a,
+#search p, #submit_search {
+  font-size: 1.5em;
+  /*font-family: "Bitter", sans-serif;*/
+  font-family: "Courier New";
+  font-weight: bold;
+}
+
+.subcategory p, #button a { 
+	color: rgb(65, 64, 66);
+}
+
+#search p { 
+	font-size: 2em;
+	letter-spacing: 5px; 
+	color: #fff;
+}
+}
