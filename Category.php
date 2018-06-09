@@ -63,6 +63,7 @@
 	body{
 		margin: 0 auto;
 		min-width: 960px;
+		max-width: 1301px;
 		overflow: auto;
 		background-image: url(<?php echo $bg_image?>);
 	}
@@ -77,9 +78,9 @@
 
 <body>
 	<div class = "viewport">
-		<div class = "text_wrapper">
-			<div class = "card">
-				<div class = "container">
+		<div class = "Text_wrapper">
+			<div class = "card container">
+				<!-- <div class = "container"> -->
 					<?php 
 							//Print the header with the working group in the title 
 							echo "<h1 class = 'header'>". $title . " Health</h1>"; 
@@ -88,47 +89,59 @@
 								echo "<p class = 'text_body'>" . $working_description[$i] . "</p>";
 							}
 					?>
-				</div>
+				<!-- </div> -->
 			</div>
 
-			<div class = "faculty_resources">
-				<div class = "card">
-					<div class = "container">
-						<h3 class = 'header'>Faculty Resource Links</h3>
-						<ul>
-							<?php
-								//Iterate through all of the resources for faculty members and print it out with the appropriate links to the modals
-								foreach($faculty_resources as $key){
-									echo "<li class = 'text_setting'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
-								} 
-							?>
-						</ul>
-					</div>
+			<div id="resouce_links">
+				<div class = "faculty_resources card container">
+					<!-- <div class = "card"> -->
+						<!-- <div class = "container"> -->
+							<h3 class = 'header'>Faculty Resource Links</h3>
+							<ul>
+								<?php
+									
+									if (count($faculty_resources) > 0) {
+										//Iterate through all of the resources for faculty members and print it out with the appropriate links to the modals
+										foreach($faculty_resources as $key){
+											echo "<li class = 'text_setting'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
+										}
+									} else {
+										echo "<li style='list-style-type: none;'><i>No Resource Available</i></li>";
+									}
+								?>
+							</ul>
+						<!-- </div> -->
+					<!-- </div> -->
 				</div>
-			</div>
 
-			<div class = "student_resources">
-				<div class = "card">
-					<div class = "container">
-						<h3 class = 'header'>Student Resource Links</h3>
-						<ul>
+				<div class = "student_resources card container">
+					<!-- <div class = "card"> -->
+						<!-- <div class = "container"> -->
+							<h3 class = 'header'>Student Resource Links</h3>
+							<ul>
 
-							<?php
-								//Iterate through all of the resources for students and print the resources out with appropriate links to the modals 
-								foreach($student_resources as $key){
-									echo "<li class = 'text_setting'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
-								} 
-							?>
-						</ul>
-					</div>
+								<?php
+									if (count($student_resources) > 0)  {
+										//Iterate through all of the resources for students and print the resources out with appropriate links to the modals 
+										foreach($student_resources as $key){
+											echo "<li class = 'text_setting'><a class=\"myBtn\" onclick=\"openModal('" . $key["organization"] . "')\">" . $key["organization"] . "</a></li>";
+										} 
+									} else {
+										echo "<li style='list-style-type: none;'><i>No Resource Available</i></li>";	
+									}
+
+								?>
+							</ul>
+						<!-- </div> -->
+					<!-- </div> -->
 				</div>
 			</div>
 		</div>
 
-		<div class = "Hotline_wrapper">
-			<div class = "card">
+		<div class = "Hotline_wrapper card">
+			<!-- <div class = "card"> -->
 				<div class = "container">
-					<div id = "Hotline_table">
+					<!-- <div id = "Hotline_table"> -->
 						<h2 class = 'header'> National Hotlines </h2>
 						<ul>
 							<?php
@@ -138,9 +151,9 @@
 								}
 							?>
 						</ul>
-					</div>
+					<!-- </div> -->
 				</div>
-			</div>
+			<!-- </div> -->
 		</div>
 	</div>
 
