@@ -22,7 +22,6 @@
     background-color: white;
     margin: 3% auto;  /*Will not center vertically and won't work in IE6/7. */
     background-image: url("../img/modal_background.png");
-    /*background-size: ;*/
 }
 
 #modal * {

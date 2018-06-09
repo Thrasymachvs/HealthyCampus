@@ -72,7 +72,6 @@ li {
 	display*:inline;
 	height:auto;
 	width:79%;
-
 }	
 
 
@@ -127,6 +126,11 @@ li {
 .container {
     padding: 2px 16px;
 }
+
+.resource_links {
+    height: 100%;
+}
+
 /*Default font*/
 .subcategory p, #button a,
 #search p, #submit_search {

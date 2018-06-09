@@ -5,6 +5,8 @@
 body {
 	/*Ensure that there's no white space on the border*/
 	margin: 0 auto;
+	min-width: 960px;
+	overflow: auto;
   background-image: url("../img/background_pattern_final-01.png");
   background-size: 800px 800px;
 
@@ -57,7 +59,7 @@ body {
   /*Search Button*/
   #submit_search {
     display: inline-block;
-    margin-left: 2em;
+    margin-left: 1em;
     padding: 0.6em 1.1em;
     appearance: none;
     box-shadow: none;
@@ -132,16 +134,9 @@ body {
     margin-bottom: 20px;
   }
 
-  #search > *{
-    /*Stack each subcategory horizontally*/
-    /*margin: 0;*/
-    /*display: inline-block;*/
-  }
-
   /*Search Button*/
   #submit_search {
     display: inline-block;
-    /*margin-left: 2em;*/
     width: 368px;
     margin-top: 20px;
     padding: 0.6em 1.1em;
@@ -205,17 +200,6 @@ body {
   }
 }
 
-
-
-
-
-
-
-
-
-#body {
-  /*height: auto;*/
-}
 
 #about {
   margin: 4em 8em 8em 8em;

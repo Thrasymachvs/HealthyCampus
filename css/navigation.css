@@ -7,7 +7,6 @@
 	.subcategory p {
 		/*font-size: 1.5em;*/
 		font-size: 1.35em;
-		/*font-family: "Bitter", sans-serif;*/
 		font-family: "Courier New";
 		font-weight: bold;
 		color: rgb(65, 64, 66);
@@ -23,14 +22,9 @@
 
 	.subcategory {
 		/*Note: Creates the circle*/
-		/*width: 10em;
-		height: 10em;*/
 		width: 9em;
 		height: 9em;
 		border-radius: 50%;
-		/*background-color: #B8B8B8;*/
-		/*background-image: url("../img/button/button_1.png");*/
-		/*background-size: 100% auto;*/
 
 
 		/*Stack each subcategory horizontally*/
@@ -39,7 +33,6 @@
 		vertical-align: middle; /*Ensure that there's no 'baseline' issue*/
 
 		/*Note: Spacing in between menu items*/
-		/*margin: 0 3em;*/
 		margin: 0 1em;
 
 		/*Animation*/
@@ -55,6 +48,17 @@
 		transform: scale(1.1);
 		-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 		transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+	}
+
+	#selected { pointer-events: none; }
+
+	#selected div {
+	  content: '';
+	  border: #2f4260 solid 4px;
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	  -webkit-transition-property: top, right, bottom, left;
+	  transition-property: top, right, bottom, left;
 	}
 }
 
@@ -86,10 +90,7 @@
 	#menuToggle
 	{
 	  display: block;
-	  /*position: relative;*/
 	  position: absolute;
-	  /*top: 50px;
-	  left: 50px;*/
 	  top: 30px;
 	  left: 30px;
 	  
