@@ -9,7 +9,7 @@
 	// 		- $link: The link of the button	
 	function homeButton($link = "home.php") {
 		echo "<a href='" . $link . "'>";
-		echo "<div class='subcategory' style=\"background: url('img/button/home.png') no-repeat center; background-size: 140px 140px\">";
+		echo "<div class='subcategory' style=\"background: url('img/button/home.png') no-repeat center; background-size: 100% auto;\">";
 		echo "<p style='padding-top: 1.8em;'>HOME</p>";
 		echo "</div>";
 		echo "</a>";		
@@ -23,7 +23,7 @@
 	function menuButton($subname, $link, $num) {
 		$style = (strlen($subname) >= 10) ? "1.2em" : "1.8em";
 		echo "<a class='link' href='" . $link . "'>";
-		echo "<div class='subcategory' style=\"background: url('img/button/button_" . $num . ".png') no-repeat center; background-size: 140px 140px\">";
+		echo "<div class='subcategory' style=\"background: url('img/button/button_" . $num . ".png') no-repeat center; background-size: 130px 130px;\">";
 		echo "<p style='padding-top: " . $style . ";'>" . $subname . "</p>";
 		echo "</div>";
 		echo "</a>";

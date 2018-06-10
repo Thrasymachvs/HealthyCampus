@@ -1,7 +1,6 @@
 /* Background patterns from Toptal Subtle Patterns */
 /* Anteater head graphic provided by whoever drew them for UCI. Thanks, stranger. - Denenberg's Workshop*/
 
-
 body {
 	/*Ensure that there's no white space on the border*/
 	margin: 0 auto;
@@ -9,8 +8,6 @@ body {
 	overflow: auto;
   background-image: url("../img/background_pattern_final-01.png");
   background-size: 800px 800px;
-
-
 }
 
 .wrapper {

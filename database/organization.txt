@@ -259,7 +259,7 @@
         "email": "dyhall@uci.edu"
     },
     {
-        "organization": "Wellness Health",
+        "organization": "Faculty and Staff Mental Care - Wellness, Health and Counseling Services",
         "website": "http://www.chs.uci.edu/facultystaffmh/",
         "category": "Mental",
         "description": "The Coordinator of Faculty & Staff Mental Health Care and Respondent Services provides consultative services & support to resolve behavioral health issues, serves as a primary crisis intervention resource to facilitate and coordinate appropriate resources, provides time-limited case management for individual employees, and develops and implements instructional training & materials to assist in the promotion of mental well-being for all UCI and UC Irvine Health faculty & staff. Support is offered for a wide range of issues, including: work-related stress, relationship/couples issues, family problems, depression, anxiety, and other emotional problems, grief and loss, alcohol, drug and other addictions, consultations and training services for faculty and staff management. Services are available for faculty and staff administrators/managers as well as individual employees. Services available for faculty and staff administrators/managers: Phone or in-person consultations, Critical incident response following crisis events, On-site small work group facilitation, Workshops and trainings customized to department needs, Educational materials.                                                                                                                                                                                                                                     ",

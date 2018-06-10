@@ -17,7 +17,12 @@ function openModal(organization){
     	}
 	};
 
-	xmlhttp.open("GET", "summary.php?orgName=" + organization.replace("&", "and"), true);
+	// Checks if there is an ampersand included and if so replace it with 'and'
+	if (organization.includes("&")) {
+		xmlhttp.open("GET", "summary.php?orgName=" + organization.replace("&", "and"), true);
+	} else {
+		xmlhttp.open("GET", "summary.php?orgName=" + organization + "&ampExist=no", true);
+	}
 	xmlhttp.send();
 
 	// Open Modal

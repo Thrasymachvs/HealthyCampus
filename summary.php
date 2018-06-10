@@ -1,8 +1,14 @@
 <?php
 	
-	$orgName = (strpos($_GET["orgName"], "and") === false) ? $_GET["orgName"]: str_replace("and", "&", $_GET["orgName"]);
+	// This checks if there is an '&' in the organization name
+	$check = (isset($_GET["ampExist"]) && trim($_GET["ampExist"]) == 'no' );
+
+	// Change 'and' to original form '&'
+	$orgName = ($check) ? $_GET["orgName"]: str_replace("and", "&", $_GET["orgName"]);
 
 	include 'format.php';
+
+	// Get all the organization and their information
 	$organization = Format::formatOrganizationContent("database/organization.txt", "database/RECOVERY/organization.txt");
 
 	// Access the chosen productid

@@ -60,10 +60,6 @@
 		height: auto;
 	}
 
-	.log span {
-
-	}
-
 </style>
 
 <body>
@@ -74,6 +70,8 @@
 		<div class="log">
 			<h2>Organization Log</h2>
 			<?php
+
+				// Print the error for 'organization'
 				echo "<h4>" . $organization_time . "</h4>";
 				echo "<h4>" . $organization_error . "</h4>";
 				if (strtoupper($organization_location) != "ERROR") { echo "<h4 style='color: #adadad;'>Located in '" . $organization_location . "' row</h4>"; }
@@ -82,6 +80,8 @@
 		<div class="log">
 			<h2>Category Log</h2>
 			<?php
+
+				// Print the error for 'subcategory'
 				echo "<h4>" . $category_time . "</h4>";
 				echo "<h4>" . $category_error . "</h4>";
 				if (strtoupper($category_location) != "ERROR") { echo "<h4 style='color: #adadad;'><i>Located in '<span>" . strtoupper($category_location) . "</span>' row</i></h4>"; }

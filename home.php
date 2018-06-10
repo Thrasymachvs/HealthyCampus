@@ -58,6 +58,8 @@
 			<a href="#about" class="effect-underline">ABOUT</a>
 		</div>
 	</div>
+
+	<!-- About -->
 	<div id="body" class="wrapper">
 		<div id="about">
 			<h1>About</h1>
@@ -71,12 +73,14 @@
 				UCI’s HCI is lead by the Institute for Clinical and Translational Science (ICTS). We seek to build on the existing strengths and resources of our campus to enhance a culture of health and wellness for everyone here at UCI. 
 			</p>
 			<p>
-				Please contact Luis Cendejas at <span style="color: DarkBlue;">lcendeja@uci.edu</span>, or (949) 824-9560 if you have any questions regarding the Healthy Campus initiative, or if you just want to talk to him (he’s a cool dude).
+				Please contact Luis Cendejas at <span style="color: DarkBlue;">lcendeja@uci.edu</span>, or (949) 824-9560 if you have any questions regarding the Healthy Campus initiative, or if you just want to talk to him.
 			</p> 
 		</div>
 		
 	</div>
 </body>
+
+<!-- Dropdown button animation -->
 <script src="js/dropdown.js"></script>
 <script src="js/smooth_scroll.js"></script>
 
@@ -91,7 +95,6 @@
 
 			// Determine which on the dropdown choices are selected
 			var selected = $("dt a span").html();
-			// alert(selected);
 
 			// A modal will open and display information based on the selected choice
 			if (selected == "Counseling Services") {
