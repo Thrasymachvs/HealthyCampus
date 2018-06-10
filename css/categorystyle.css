@@ -84,8 +84,19 @@ li {
 		width: 45.5%;
 	}
 
+	.container {
+		padding: 16px 16px;
+	}
+
+	.header {
+		padding-left: 28px;
+	}
+
 	.text_body{
 		margin-left: 50px;
+		margin-right: 50px;
+	    text-align: justify;
+	    text-justify: inter-word;
 	}
 
 	.viewport{

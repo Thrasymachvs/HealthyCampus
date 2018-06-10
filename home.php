@@ -73,7 +73,7 @@
 				UCI’s HCI is lead by the Institute for Clinical and Translational Science (ICTS). We seek to build on the existing strengths and resources of our campus to enhance a culture of health and wellness for everyone here at UCI. 
 			</p>
 			<p>
-				Please contact Luis Cendejas at <span style="color: DarkBlue;">lcendeja@uci.edu</span>, or (949) 824-9560 if you have any questions regarding the Healthy Campus initiative, or if you just want to talk to him.
+				Please contact Luis Cendejas at <span style="color: DarkBlue;">lcendeja@uci.edu</span>, or (949)824-9560 if you have any questions regarding the Healthy Campus Initiative, or if you just want to talk to him.
 			</p> 
 		</div>
 		
