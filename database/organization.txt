@@ -1,7 +1,7 @@
 [
     {
         "organization": " FRESH Basic Needs Hub",
-        "website": "www.basicneeds.uci.edu",
+        "website": "http://www.basicneeds.uci.edu",
         "category": "Nutrition",
         "description": "A student-initiated service available to UCI students in need of Basic Needs Resources. The hub houses the SOAR food pantry (free food supplies, hygiene products), and offers resource referrals to campus and off campus resources, and case management for students in need.",
         "users": "Student"
@@ -75,7 +75,7 @@
         "website": "https://studentwellness.uci.edu/get-involved/peer-health-educators",
         "category": "Sexual",
         "description": "Peer Health Educators (PHEs) provide education and programming on the UCI campus. The PHEs are recruited during winter quarter and complete a 1.3 unit course in the spring. During this course students select an area of expertise, including stress/time management, nutrition, sexual health or alcohol and other drugs.",
-        "users": "Students"
+        "users": "Student"
     },
     {
         "organization": "Counseling Center",
@@ -90,7 +90,7 @@
         "website": "http://www.counseling.uci.edu/",
         "category": "Sexual",
         "description": "The counseling center provides emotional, interpersonal, spiritual, and psychological assistance to the greater campus community. The center offers individual, group, and couples counseling for all UCI students. In addition, the center's staff consult regularly about issues of mental health and wellness impacting students with students, faculty, and staff.",
-        "users": "Students"
+        "users": "Student"
     },
     {
         "organization": "Cross Cultural Center",
@@ -116,6 +116,13 @@
         "website": "http://www.wellness.uci.edu/facultystaff/eap/introduction.html",
         "category": "Mental",
         "description": "Guidance Resources Employee Assistance Program The Employee Assistance Program (EAP) is a free, confidential benefit that can help address personal or work-related issues faced by UCI faculty, staff, retirees and dependents at both the UCI Campus and UC Irvine Health. This service, staffed by experienced clinicians, is available 24 hours a day, seven days a week. A Guidance Resource Professional will help with problem identification, assessment and referral to treatment providers and community resources. As of July 1, 2015, this program is administered by ComPsych Guidance Resources. Guidance Resources can assist with concerns such as: Marital conflict Financial, legal or consumer concerns Interpersonal difficulties Referrals to community resources Conflict at work Alcohol or drug abuse Depression or anxiety Grieving loss Stress management Personal decision-making Family relationships",
+        "users": "Faculty"
+    },
+    {
+        "organization": "Faculty and Staff Mental Care - Wellness, Health and Counseling Services",
+        "website": "http://www.chs.uci.edu/facultystaffmh/",
+        "category": "Mental",
+        "description": "The Coordinator of Faculty & Staff Mental Health Care and Respondent Services provides consultative services & support to resolve behavioral health issues, serves as a primary crisis intervention resource to facilitate and coordinate appropriate resources, provides time-limited case management for individual employees, and develops and implements instructional training & materials to assist in the promotion of mental well-being for all UCI and UC Irvine Health faculty & staff. Support is offered for a wide range of issues, including: work-related stress, relationship/couples issues, family problems, depression, anxiety, and other emotional problems, grief and loss, alcohol, drug and other addictions, consultations and training services for faculty and staff management. Services are available for faculty and staff administrators/managers as well as individual employees. Services available for faculty and staff administrators/managers: Phone or in-person consultations, Critical incident response following crisis events, On-site small work group facilitation, Workshops and trainings customized to department needs, Educational materials.                                                                                                                                                                                                                                     ",
         "users": "Faculty"
     },
     {
@@ -177,7 +184,7 @@
         "website": "http://www.shs.uci.edu/Services_Clinics/MedicalSpecialty-StudentHealthCenter-UCI.aspx#women_health",
         "category": "Sexual",
         "description": "The Student Health Center is a comprehensive outpatient clinic staffed with licensed primary care physicians, dentists, a physician assistant, registered nurse practitioners, and registered nurses. Medical specialists from various disciplines including dermatology, orthopedics/sports medicine, gynecology, internal medicine, ENT, and psychiatry provide on-site consultation on a regular basis. 1) Women’s Health - One of our most active clinics, the Women's Health Clinic performs women's exams, Pap smears, screening for infections, and provides contraceptive counseling and management. Endocrine problems, abnormal pap smears, breast lumps, chronic pelvic pain, and other complex women's health problems are also evaluated and treated by the staff of our Women’s Health Clinic. 2) The Student Health Center provides several options for contraceptive management. Since there are many factors to consider when making this important decision, SHC providers are available to assist in determining the safest and most appropriate method based upon individual needs and preferences. - In addition to an individualized discussion about birth control, you will also be provided with options including but not limited to: i. Screening for sexually transmitted infections ii. Obtaining additional preventive care counseling iii. Receiving the vaccine for preventing various types of cancer including cervical, vulvar, vaginal, oropharyngeal (back of the throat, base of the tongue and tonsils) and anal iv. Choosing to have a physical exam",
-        "users": "Students"
+        "users": "Student"
     },
     {
         "organization": "Student Wellness & Health Promotion",
@@ -257,13 +264,6 @@
         "users": "Faculty",
         "phoneNumber": "\"9498245429\"",
         "email": "dyhall@uci.edu"
-    },
-    {
-        "organization": "Faculty and Staff Mental Care - Wellness, Health and Counseling Services",
-        "website": "http://www.chs.uci.edu/facultystaffmh/",
-        "category": "Mental",
-        "description": "The Coordinator of Faculty & Staff Mental Health Care and Respondent Services provides consultative services & support to resolve behavioral health issues, serves as a primary crisis intervention resource to facilitate and coordinate appropriate resources, provides time-limited case management for individual employees, and develops and implements instructional training & materials to assist in the promotion of mental well-being for all UCI and UC Irvine Health faculty & staff. Support is offered for a wide range of issues, including: work-related stress, relationship/couples issues, family problems, depression, anxiety, and other emotional problems, grief and loss, alcohol, drug and other addictions, consultations and training services for faculty and staff management. Services are available for faculty and staff administrators/managers as well as individual employees. Services available for faculty and staff administrators/managers: Phone or in-person consultations, Critical incident response following crisis events, On-site small work group facilitation, Workshops and trainings customized to department needs, Educational materials.                                                                                                                                                                                                                                     ",
-        "users": "Faculty"
     },
     {
         "organization": "ZotWheels Program",

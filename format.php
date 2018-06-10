@@ -77,7 +77,7 @@
 					copy($recovery_path, $original_path);
 
 					// Update the error for the organization page
-					$error = "Error: Organization database failed to load! -- " . $check["Error"] . " -- LOCATED IN: " . $check['Name'];
+					$error = date("l jS \of F Y h:i:s A") . "|" . $check["Error"] . "|" . $check['Name'];
 					
 					// Open Error Log
 					$myfile = fopen("database/ERROR/organization_error.txt", "w") or die("Unable to open file!");
@@ -88,6 +88,8 @@
 
 					// Close Error Log
 					fclose($myfile);
+
+					echo $error . "<br>";
 
 
 					// Run the function again with the valid information
@@ -159,7 +161,7 @@
 					copy($recovery_path, $original_path);
 
 					// Update the error for the organization page -- CHANGE CHECK VALIDITY
-					$error = "Error: Category database failed to load! -- " . $check["Error"] . " -- LOCATED IN: " . $check['Name'];
+					$error = date("l jS \of F Y h:i:s A") . "|" . $check["Error"] . "|" . $check['Name'];
 					
 					// Open Error Log
 					$myfile = fopen("database/ERROR/category_error.txt", "w") or die("Unable to open file!");
@@ -217,7 +219,6 @@
 			$file = fopen($pathName, "r");
 			$size = filesize($pathName);
 			$text = fread($file, $size);
-			// fclose($file);
 
 			// Remove the uunnecessary characters
 			$string = substr(str_replace("\n", "", $text), 7, -8);
@@ -273,6 +274,7 @@
 				
 			}
 
+			fclose($file);
 			return $result;
 		}
 
@@ -295,14 +297,14 @@
 			 	// If the value is an error, return the error
 			 	if ($value == "error") {
 			 			$result["Bool"] = false;
-			 			$result["Error"] = "Invalid Format - " . $key . ": This field is required";
+			 			$result["Error"] = "Invalid Format - " . strtoupper($key) . " field is required";
 			 			return $result;
 			 	}
 
 			 	if ($key == "website") {
 
 			 		// If the website does not follow the URL format, return FALSE
-					if (self::_checkWebsite($value) === 0) {
+					if (self::_checkWebsite($value) == '') {
 						$result["Bool"] = false;
 			 			$result["Error"] = "Invalid Format - website: " . $value;
 			 			return $result;
@@ -311,7 +313,7 @@
 			 	} elseif ($key == "category") {
 
 			 		// If the category is not in the $valid_cat array, return FALSE
-			 		if(self::_checkCategory($value) === 0) {
+			 		if(self::_checkCategory($value) == '') {
 			 			$result["Bool"] = false;
 			 			$result["Error"] = "Invalid Format - category: " . $value;
 			 			return $result;
@@ -320,7 +322,7 @@
 			 	} elseif ($key == "users") {
 
 			 		// If the user is not in the $valid_users array, return FALSE
-			 		if(self::_checkUsers($value) === 0) {
+			 		if(self::_checkUsers($value) == '') {
 			 			$result["Bool"] = false;
 			 			$result["Error"] = "Invalid Format - users: " . $value;
 			 			return $result;
@@ -355,7 +357,7 @@
 			 	} elseif ($key == "hotlines") {
 
 			 		// If the hotlines does not follow the valid format, return FALSE
-			 		if(self::_checkHotlines($value) === 0)  {
+			 		if(self::_checkHotlines($value) == '')  {
 			 			$result["Bool"] = false;
 			 			$result["Error"] = "Invalid Format - hotlines: " . $value;
 			 			return $result;
@@ -535,14 +537,21 @@
 		// Parameter(s):
 		// 		- $selected: The specified category
 		private static function _checkCategory($selected) {
-			return in_array(strtoupper($selected), self::$valid_cat);
+			$result = self::$valid_cat;
+
+			// Get the first words in the array
+			for ($i = 0; $i < count(self::$valid_cat); $i++) { 
+				$arr = explode(' ',trim(self::$valid_cat[$i]));
+				array_push($result, $arr[0]);
+			}
+			return in_array(strtoupper($selected), $result);
 		}
 
 		// Description: Checks if the 'user' is a valid user
 		// Parameter(s):
 		// 		- $user: The specified user
 		private static function _checkUsers($user) {
-			return in_array(strtoupper($user), self::$valid_users);
+			return in_array(strtolower($user), self::$valid_users);
 		}
 
 		// Description: Checks if the format given for Hours of Operation is valid
