@@ -89,6 +89,7 @@
 			      <?php
 					for ($i = 0; $i < count($valid_cat); $i++) { 
 						$value = strtolower(str_replace(" ", "_", $valid_cat[$i]));
+						$value = (strpos($value, "&") !== false) ? str_replace("&", "and", $value) : $value;
 						hamMenuButton($valid_cat[$i], "Category.php?group=" . $value);
 					}
 			      ?>
