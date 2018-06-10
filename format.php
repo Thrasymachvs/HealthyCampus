@@ -89,7 +89,6 @@
 					// Close Error Log
 					fclose($myfile);
 
-					echo "ERROR @ Organization <br>";
 
 					// Run the function again with the valid information
 					return self::formatOrganizationContent($original_path, $recovery_path);
@@ -171,8 +170,6 @@
 
 					// Close Error Log
 					fclose($myfile);
-
-					echo "ERROR @ Category <br>";
 
 					// Run the function again with the valid information
 					return self::formatSubcategoryContent($original_path, $recovery_path);
@@ -297,7 +294,6 @@
 			 	
 			 	// If the value is an error, return the error
 			 	if ($value == "error") {
-			 			echo "here<br>";
 			 			$result["Bool"] = false;
 			 			$result["Error"] = "Invalid Format - " . $key . ": This field is required";
 			 			return $result;
