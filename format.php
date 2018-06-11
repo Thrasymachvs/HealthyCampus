@@ -11,7 +11,8 @@
 		// 
 		
 		// The dropdown choices @ HOME.PHP
-		public static $dropdown_choices = array("Counseling Services" , "Fitness Groups" , "Anxiety Resources");
+		// NOTE: When changing the dropdown choice, make sure that '&' is not included
+		public static $dropdown_choices = array("Sexual Assault", "Extracurricular Activities", "Stress, Anxiety and Depression", "Colds, Flus and Sore Throats", "STD");
 
 		// Valid 'organization' columns
 		public static $valid_org_col = array("organization", "website", "category", "description", "users", "hoursOfOperation", "imageName", "phoneNumber", "email", "location", "geotag");
@@ -88,9 +89,6 @@
 
 					// Close Error Log
 					fclose($myfile);
-
-					echo $error . "<br>";
-
 
 					// Run the function again with the valid information
 					return self::formatOrganizationContent($original_path, $recovery_path);

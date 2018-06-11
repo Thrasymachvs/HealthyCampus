@@ -1,7 +1,9 @@
-/*Note: Give Credit to creator*/
+/*Credit to Thomas Bekaert*/
+/*https://codepen.io/Tombek/pen/OPvpLe*/
+
 /* Dropdown style */
 .dropdown {
-  width: 23em;
+  width: 26em;
   margin: 0 auto;
   margin-bottom: 1em;
 
@@ -45,8 +47,8 @@
   display: none;
   position: absolute;
   top: 1.1em;
-  right: -0.1em;
-  width: 112%;
+  right: -0.05em;
+  width: 110.5%;
   list-style: none;
   background: #fff none repeat scroll 0 0;
   border: 1px solid #bdc3c7;

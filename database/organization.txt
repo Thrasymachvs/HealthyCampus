@@ -21,6 +21,7 @@
         "description": "Campus Recreation provides the university with outlets for physical activity to promote health and personal wellness. The programs it offers include intramural sports, club-level sports, and recreational classes among other services. The Anteater Recreation Center itself has a traditional gym spaces, indoor track, recreational lap pool, several indoor basketball courts, and more.",
         "users": "Both",
         "hoursOfOperation": "mtuwth=06:00am-01:00am,f=06:00am-12:00am,sa=08:00am-09:00pm,su=06:00am-12:00am",
+        "imageName": "arc.jpg",
         "phoneNumber": "\"9498245346\"",
         "location": "680 California Ave, Irvine, California 92697"
     },
@@ -45,6 +46,7 @@
         "description": "Please keep in mind that the above hours are regular business hours, and that after hours services are available 24/7 through the UCI Counseling Center and Campus Police. |par|UCI CARE provides free and confidential support services to members of the UCI community impacted by sexual assault, relationship abuse, family violence and/or stalking. UCI CARE aims to end these forms of power-based personal violence by engaging the campus community in education, programming, and transformative action. UCI CARE's main services are: advocacy services, holistic healing, peer education, and other resources available through their website.",
         "users": "Student",
         "hoursOfOperation": "mtuwthf=08:00am-05:00pm",
+        "imageName": "student_center_g.png",
         "phoneNumber": "\"9498247273\"",
         "email": "care@uci.edu",
         "location": "Suite G320 Student Center (3rd floor)"
@@ -83,14 +85,21 @@
         "category": "Mental",
         "description": "The Counseling Center is the primary counseling and mental health agency for UC Irvine undergraduate and graduate students. The Counseling Center provides support to the University community through crisis intervention, training regarding mental health issues, and outreach and consultation services. The Center's services are available and free of charge to currently registered students. Students with chronic and severe mental health issues needing long term and extensive services are referred to other appropriate community providers. Counseling center provides UC Irvine students with a broad range of mental health services. They include individual, couples, family, group counseling, and psychotherapy for registered undergraduate, graduate, and professional school students. They also provide urgent care, crisis response, consultation, and outreach programs for the university community. As a faculty or staff member of the UC Irvine campus community, you have numerous opportunities to interact with students. At times faculty and staff will have contact with students whose problems or behaviors may cause concern, discomfort, or may interfere with work or the education of other students. The Counseling Center is available to help Faculty and Staff in these situations. The information provided helps faculty and staff identify student concerns, how to respond, and how to utilize campus resources to address these issues.",
         "users": "Student",
-        "location": "Irvine, CA 92697"
+        "hoursOfOperation": "mtuwthf=08:00am-05:00pm",
+        "imageName": "counseling_center.jpg",
+        "phoneNumber": "\"9498246457\"",
+        "location": "203 Student Services 1 Irvine CA 92697 - 2200"
     },
     {
         "organization": "Counseling Center",
         "website": "http://www.counseling.uci.edu/",
         "category": "Sexual",
         "description": "The counseling center provides emotional, interpersonal, spiritual, and psychological assistance to the greater campus community. The center offers individual, group, and couples counseling for all UCI students. In addition, the center's staff consult regularly about issues of mental health and wellness impacting students with students, faculty, and staff.",
-        "users": "Student"
+        "users": "Student",
+        "hoursOfOperation": "mtuwthf=08:00am-05:00pm",
+        "imageName": "counseling_center.jpg",
+        "phoneNumber": "\"9498246457\"",
+        "location": "203 Student Services 1 Irvine CA 92697 - 2200"
     },
     {
         "organization": "Cross Cultural Center",
@@ -181,10 +190,14 @@
     },
     {
         "organization": "Student Health Center",
-        "website": "http://www.shs.uci.edu/Services_Clinics/MedicalSpecialty-StudentHealthCenter-UCI.aspx#women_health",
+        "website": "http://www.shs.uci.edu/",
         "category": "Sexual",
-        "description": "The Student Health Center is a comprehensive outpatient clinic staffed with licensed primary care physicians, dentists, a physician assistant, registered nurse practitioners, and registered nurses. Medical specialists from various disciplines including dermatology, orthopedics/sports medicine, gynecology, internal medicine, ENT, and psychiatry provide on-site consultation on a regular basis. 1) Women’s Health - One of our most active clinics, the Women's Health Clinic performs women's exams, Pap smears, screening for infections, and provides contraceptive counseling and management. Endocrine problems, abnormal pap smears, breast lumps, chronic pelvic pain, and other complex women's health problems are also evaluated and treated by the staff of our Women’s Health Clinic. 2) The Student Health Center provides several options for contraceptive management. Since there are many factors to consider when making this important decision, SHC providers are available to assist in determining the safest and most appropriate method based upon individual needs and preferences. - In addition to an individualized discussion about birth control, you will also be provided with options including but not limited to: i. Screening for sexually transmitted infections ii. Obtaining additional preventive care counseling iii. Receiving the vaccine for preventing various types of cancer including cervical, vulvar, vaginal, oropharyngeal (back of the throat, base of the tongue and tonsils) and anal iv. Choosing to have a physical exam",
-        "users": "Student"
+        "description": "The Student Health Center is a comprehensive outpatient clinic staffed with licensed primary care physicians, dentists, a physician assistant, registered nurse practitioners, and registered nurses. Medical specialists from various disciplines including dermatology, orthopedics/sports medicine, gynecology, internal medicine, ENT, and psychiatry provide on-site consultation on a regular basis.|par|1) Women's Health - One of our most active clinics, the Women's Health Clinic performs women's exams, Pap smears, screening for infections, and provides contraceptive counseling and management. Endocrine problems, abnormal pap smears, breast lumps, chronic pelvic pain, and other complex women's health problems are also evaluated and treated by the staff of our Women's Health Clinic.|par|2) The Student Health Center provides several options for contraceptive management. Since there are many factors to consider when making this important decision, SHC providers are available to assist in determining the safest and most appropriate method based upon individual needs and preferences. - In addition to an individualized discussion about birth control, you will also be provided with options including but not limited to: i. Screening for sexually transmitted infections ii. Obtaining additional preventive care counseling iii. Receiving the vaccine for preventing various types of cancer including cervical, vulvar, vaginal, oropharyngeal (back of the throat, base of the tongue and tonsils) and anal iv. Choosing to have a physical exam",
+        "users": "Student",
+        "hoursOfOperation": "mtuwthf=8:00am-5:00pm",
+        "imageName": "shs.jpg",
+        "phoneNumber": "\"9498245301\"",
+        "location": "501 Student Health Irvine, CA 92697 - 5200"
     },
     {
         "organization": "Student Wellness & Health Promotion",
@@ -193,21 +206,10 @@
         "description": "A webpage that is part of the Student Wellness & Health Promotion team. Its purpose is to raise awareness about mental health, reduce stigma associated with mental illness, promote help seeking behaviors and mental wellness practices, and prevent suicide through individual education and outreach events. Among other services, the team provides mental health awareness consultations, which are 30-60 minute, one-on-one confidential appointments. You can also email Mental Health Awareness Manager, Jasmine A. Blackburn (jablackb@uci.edu) for more information.",
         "users": "Student",
         "hoursOfOperation": "mtuwthf=8:00am-5:00pm",
+        "imageName": "student_center_g.png",
         "phoneNumber": "\"9498249355\"",
         "email": "studentwellness@uci.edu",
         "location": "G319 Student Center, Irvine, CA 92697"
-    },
-    {
-        "organization": "Test Organization",
-        "website": "http://www.testorg.com",
-        "category": "Mental",
-        "description": "At the University of California, Irvine, providing equal opportunities for students with disabilities is a campus-wide responsibility and commitment. Dsiabilities include, but are not limited to, orthopedic, visual, hearing, learning, chronic health and psychological disabilities.|par|UCI demonstrates its core values of individual growth and development and civility and diversity by recognizing students with disabilities as an important part of its student body.",
-        "users": "Student",
-        "hoursOfOperation": "mtuwthf=allday,sa=08:00am-05:00pm",
-        "imageName": "test.jpg",
-        "phoneNumber": "\"7144567890\"",
-        "email": "organization@example.com",
-        "location": "101 The City Drive South, Orange, CA 92868"
     },
     {
         "organization": "Tobacco Topic - Student Wellness & Health Promotion",

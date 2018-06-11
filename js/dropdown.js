@@ -1,3 +1,6 @@
+// Credit to Thomas Bekaert
+// https://codepen.io/Tombek/pen/OPvpLe
+
 var dropdowns = $(".dropdown");
 
 // Onclick on a dropdown, toggle visibility

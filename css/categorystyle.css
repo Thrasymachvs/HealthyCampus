@@ -48,8 +48,6 @@
 @media screen and (min-width: 1101px){
 
 	#resouce_links {
-		/*min-height: 200px;*/
-		/*height: auto;*/
 		display: flex;
 		justify-content: space-between;
 		margin-top: 10px;
@@ -82,8 +80,6 @@
 
 		display: flex;
 		justify-content: space-between;
-
-		/*height: 100%;*/
 		
 	}
 
@@ -94,69 +90,22 @@
 		height: 10%;
 	}
 
-	.text_wrapper,
-	.Hotline_wrapper {
-		/*height: 100px;*/
-	}
-
 	.Hotline_wrapper{
-		
-		/*display:inline-block;*/
-		/*display*:inline;*/
-		
-		/*float:right;*/
 		min-width: 228px;
 		width: 20%;
 	}
 
 	.Text_wrapper{
-		/*min-width: 800px;*/
-		/*float: left;*/
-		/*display:inline-block;*/
-		/*display*:inline;*/
-		/*height:auto;*/
-		/*width:79%;*/
 		width:77%;
-
 	}	
 
 	.Hotline_wrapper ul {
 		padding-left: 20px;
 	}
 
-
-	/*.container {
-	    padding: 2px 16px;
-	}*/
-
-
 	.resources{
 		display: table;
 		width: 100%;
-	}
-
-
-	.faculty_resources{
-		/*display: table-cell;*/
-		/*padding-top: 10px;*/
-		/*display:inline-block;*/
-		/*display*inline;*/
-		/*float:left;*/
-		/*width:49%;*/
-		/*height: auto;*/
-
-	}
-
-	.student_resources{
-		/*display: table-cell;*/
-		/*padding-top: 10px;*/
-		
-		/*display: inline-block;*/
-		/*display*inline;*/
-		/*float: right;*/
-		/*height: auto;*/
-		/*width:49%;*/
-
 	}
 
 	.elem{
@@ -171,8 +120,7 @@
 	.subcategory p, #button a,
 	#search p, #submit_search {
 	  font-size: 1.5em;
-	  /*font-family: "Bitter", sans-serif;*/
-	  font-family: "Courier New";
+	  font-family: "Bitter", sans-serif;
 	  font-weight: bold;
 	}
 

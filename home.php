@@ -97,12 +97,16 @@
 			var selected = $("dt a span").html();
 
 			// A modal will open and display information based on the selected choice
-			if (selected == "Counseling Services") {
-				openModal("Test Organization");
-			} else if (selected == "Fitness Groups") {
+			if (selected == "Sexual Assault") {
+				openModal("Campus Assault Resource & Education");
+			} else if (selected == "Extracurricular Activities") {
+				openModal("Anteater Recreation Center");
+			} else if (selected == "Stress, Anxiety and Depression") {
 				openModal("Counseling Center");
-			} else if (selected == "Anxiety Resources") {
-				openModal("Disability Services Center");
+			} else if (selected == "Colds, Flus and Sore Throats") {
+				openModal("Student Health Center");
+			} else if (selected == "STD") {
+				openModal("Student Wellness & Health Promotion");
 			}
 		});
 

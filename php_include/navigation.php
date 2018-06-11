@@ -9,8 +9,8 @@
 	// 		- $link: The link of the button	
 	function homeButton($link = "home.php") {
 		echo "<a href='" . $link . "'>";
-		echo "<div class='subcategory' style=\"background: url('img/button/home.png') no-repeat center; background-size: 100% auto;\">";
-		echo "<p style='padding-top: 1.8em;'>HOME</p>";
+		echo "<div class='subcategory' style=\"background: url('img/button/home.png') no-repeat center; background-size: 130px 130px;\">";
+		echo "<p style='padding-top: 2em;'>HOME</p>";
 		echo "</div>";
 		echo "</a>";		
 	}
@@ -21,7 +21,7 @@
 	// 		- $link: The link of the button
 	//		- $num: Define which button to use
 	function menuButton($subname, $link, $num) {
-		$style = (strlen($subname) >= 10) ? "1.2em" : "1.8em";
+		$style = (strlen($subname) >= 10) ? "1.5em" : "2em";
 		echo "<a class='link' href='" . $link . "'>";
 		echo "<div class='subcategory' style=\"background: url('img/button/button_" . $num . ".png') no-repeat center; background-size: 130px 130px;\">";
 		echo "<p style='padding-top: " . $style . ";'>" . $subname . "</p>";
@@ -93,10 +93,6 @@
 						hamMenuButton($valid_cat[$i], "Category.php?group=" . $value);
 					}
 			      ?>
-<!-- 			      <a href="#"><li>About</li></a>
-			      <a href="#"><li>Info</li></a>
-			      <a href="#"><li>Contact</li></a>
-			      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a> -->
 		    </ul>
 		  </div>
 	</nav>

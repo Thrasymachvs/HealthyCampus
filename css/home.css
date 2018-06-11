@@ -1,5 +1,7 @@
 /* Background patterns from Toptal Subtle Patterns */
 /* Anteater head graphic provided by whoever drew them for UCI. Thanks, stranger. - Denenberg's Workshop*/
+/*Submit Search Animation credit to Ian Lunn*/
+/*https://github.com/IanLunn/Hover*/
 
 body {
 	/*Ensure that there's no white space on the border*/
@@ -8,6 +10,7 @@ body {
 	overflow: auto;
   background-image: url("../img/background_pattern_final-01.png");
   background-size: 800px 800px;
+  font-family: "bitter", sans-serif;
 }
 
 .wrapper {
@@ -19,8 +22,7 @@ body {
 #button a,
 #search p, #submit_search {
   font-size: 1.5em;
-  /*font-family: "Bitter", sans-serif;*/
-  font-family: "Courier New";
+  font-family: "Bitter", sans-serif;
   font-weight: bold;
 }
 
@@ -134,7 +136,7 @@ body {
   /*Search Button*/
   #submit_search {
     display: inline-block;
-    width: 368px;
+    width: 418px;
     margin-top: 20px;
     padding: 0.6em 1.1em;
     appearance: none;
@@ -197,14 +199,10 @@ body {
   }
 }
 
-#body{
-  font-family: "bitter", sans-serif;
-}
-
 
 #about {
   max-width: 1425px;
-  margin: 0 auto;
+  margin: 4em 8em 8em 8em;
   padding: 3em 3em 3em 3em;
   background-image: url("../img/ep_naturalwhite.png");
 }
@@ -221,6 +219,6 @@ body {
   padding: 0 3.5em 0 3.5em;
   line-height: 1.6;
 
-  font: "Bitter", sans-serif;
+  font: helvetica;
   font-size: 1.375em;
 }

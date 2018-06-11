@@ -1,3 +1,7 @@
+/*Hamburger Menu credit to  Erik Terwan*/
+/*https://codepen.io/erikterwan/pen/EVzeRP?editors=1100*/
+
+
 @media screen and (min-width: 1101px)
 {
 	/*Hides hamburger menu*/
@@ -5,7 +9,7 @@
 
 	/*Default font*/
 	.subcategory p {
-		font-size: 1.35em;
+		font-size: 1.20em;
 		font-family: "Bitter", sans-serif;
 		font-weight: bold;
 		color: rgb(65, 64, 66);

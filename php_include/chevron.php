@@ -1,5 +1,8 @@
 <?php
 
+  // Credit to Simone Viani
+  // https://codepen.io/flik185/pen/WxwLdX
+
   echo '<div class="ico animated" >
   
           <div class="circle circle-top"></div>  
