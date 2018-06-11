@@ -197,10 +197,14 @@ body {
   }
 }
 
+#body{
+  font-family: "bitter", sans-serif;
+}
+
 
 #about {
   max-width: 1425px;
-  margin: 4em 8em 8em 8em;
+  margin: 0 auto;
   padding: 3em 3em 3em 3em;
   background-image: url("../img/ep_naturalwhite.png");
 }
@@ -217,6 +221,6 @@ body {
   padding: 0 3.5em 0 3.5em;
   line-height: 1.6;
 
-  font: helvetica;
+  font: "Bitter", sans-serif;
   font-size: 1.375em;
 }
