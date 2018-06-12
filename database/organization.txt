@@ -68,6 +68,7 @@
         "imageName": "student_center_g.png",
         "phoneNumber": "\"9398249355\"",
         "email": "studentwellness@uci.edu",
+        "location": "G319 Student Center, Irvine, CA 92697"
     },
     {
         "organization": "Center for Student Wellness & Health Promotion HIV Testing",
