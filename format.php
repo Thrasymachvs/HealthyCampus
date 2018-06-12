@@ -12,7 +12,7 @@
 		
 		// The dropdown choices @ HOME.PHP
 		// NOTE: When changing the dropdown choice, make sure that '&' is not included
-		public static $dropdown_choices = array("Sexual Assault", "Extracurricular Activities", "Stress, Anxiety and Depression", "Colds, Flus and Sore Throats", "STD");
+		public static $dropdown_choices = array("Sexual Assault info", "Extracurricular Activities", "Stress resources", "Cold Symptom treatment", "STD info");
 
 		// Valid 'organization' columns
 		public static $valid_org_col = array("organization", "website", "category", "description", "users", "hoursOfOperation", "imageName", "phoneNumber", "email", "location", "geotag");

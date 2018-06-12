@@ -63,21 +63,35 @@
         "website": "https://studentwellness.uci.edu/services/condom-co-op",
         "category": "Sexual",
         "description": "The Center for Student Wellness & Health Promotion offers condoms FREE of charge. Students will be allowed to select up to TEN (10) free condom co-op items (male condoms, dental dams, or female condoms) per day. Students can also include up to 5 free lubricants. Currently, the Condom Co-Op is only operated at the Center for Student Wellness & Health Promotion.",
-        "users": "Student"
+        "users": "Student",
+        "hoursOfOperation": "mtuwthf=08:00am-05:00pm",
+        "imageName": "student_center_g.png",
+        "phoneNumber": "\"9398249355\"",
+        "email": "studentwellness@uci.edu",
     },
     {
         "organization": "Center for Student Wellness & Health Promotion HIV Testing",
         "website": "https://studentwellness.uci.edu/services/hiv-testing",
         "category": "Sexual",
         "description": "The Center for Student Wellness & Health Promotion provides free, anonymous & confidential HIV Testing for all UCI undergraduate and graduate students.|par|Appointments are required, please contact Beth at (949) 824-8206 to schedule your appointment. You must be at least 17 years of age to take the test. Do not eat, drink or use oral care products 30 minutes before the test.|par|HIV Testing is available Mondays, Wednesdays, and Thursdays during Weeks 4, 6, & 8 of the quarter by appointment only. Please contact Beth at (949) 824-8206 to schedule your appointment.|par|No blood, no needles! Results in 20 minutes! All parts of the testing process, from making an appointment to getting your result, are completely anonymous.",
-        "users": "Student"
+        "users": "Student",
+        "hoursOfOperation": "mtuwthf=08:00am-05:00pm",
+        "imageName": "student_center_g.png",
+        "phoneNumber": "\"9398248206\"",
+        "email": "studentwellness@uci.edu",
+        "location": "G319 Student Center, Irvine, CA 92697"
     },
     {
         "organization": "Center for Student Wellness & Health Promotion Peer Health Educators",
         "website": "https://studentwellness.uci.edu/get-involved/peer-health-educators",
         "category": "Sexual",
         "description": "Peer Health Educators (PHEs) provide education and programming on the UCI campus. The PHEs are recruited during winter quarter and complete a 1.3 unit course in the spring. During this course students select an area of expertise, including stress/time management, nutrition, sexual health or alcohol and other drugs.",
-        "users": "Student"
+        "users": "Student",
+        "hoursOfOperation": "mtuwthf=08:00am-05:00pm",
+        "imageName": "student_center_g.png",
+        "phoneNumber": "\"9398249355\"",
+        "email": "studentwellness@uci.edu",
+        "location": "G319 Student Center, Irvine, CA 92697"
     },
     {
         "organization": "Counseling Center",
